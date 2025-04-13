@@ -13,7 +13,7 @@
     },
     "routes": [
 		{
-		  "pattern": "dsl.wiki*",
+		  "pattern": "dsl.wiki",
 		  "custom_domain": true
 		}
 	  ],
