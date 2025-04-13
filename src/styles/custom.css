@@ -1,0 +1,7 @@
+/* Custom styles for the application */
+/* full-width table */
+/* This will make the table take the full width of its container */
+table {
+    inline-size: 100%;
+    display: table !important;
+}
