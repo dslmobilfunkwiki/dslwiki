@@ -1,0 +1,16 @@
+{
+  "sidebar": [
+    {
+      "label": "Guides",
+      "autogenerate": {
+        "directory": "guides"
+      }
+    },
+    {
+      "label": "Hardware",
+      "autogenerate": {
+        "directory": "hardware"
+      }
+    }
+  ]
+}

@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 // starlight plugins
 import starlightAutoSidebar from "starlight-auto-sidebar";
 import starlightHeadingBadges from "starlight-heading-badges";
-
+import starlightVersions from "starlight-versions";
 import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
@@ -19,12 +19,18 @@ export default defineConfig({
   },
   integrations: [
     starlight({
-      plugins: [starlightAutoSidebar(), starlightHeadingBadges()],
+      plugins: [
+        starlightAutoSidebar(),
+        starlightHeadingBadges(),
+        starlightVersions({
+          versions: [{ slug: "0.0.1" }],
+        }),
+      ],
       customCss: [
         // Relative path to your custom CSS file
         "./src/styles/custom.css",
       ],
-      title: "My Docs",
+      title: "DSL Wiki",
       defaultLocale: "root", // optional
       locales: {
         root: {
@@ -56,9 +62,7 @@ export default defineConfig({
     }),
   ],
 
-  adapter: cloudflare(
-	{
-		imageService: 'passthrough',
-	 }
-  ),
+  adapter: cloudflare({
+    imageService: "passthrough",
+  }),
 });
