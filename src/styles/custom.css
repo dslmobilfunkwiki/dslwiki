@@ -5,3 +5,21 @@ table {
     inline-size: 100%;
     display: table !important;
 }
+[data-has-sidebar][data-has-toc] .main-pane {
+    width: 100% !important; /* Override with !important */
+    --sl-content-margin-inline: 0 0 !important; /* Reset margins */
+    --sl-content-width: 100%;
+
+  }
+ 
+  /* Prevent right sidebar from squashing main content */
+.right-sidebar-panel {
+    /* Ensure the sidebar doesn't push against main content */
+    min-width: fit-content;
+  }
+  
+  .main-frame {
+    /* Protect the main content from being compressed */
+    min-width: 0;
+    flex-shrink: 0;
+  }

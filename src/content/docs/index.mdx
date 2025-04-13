@@ -3,26 +3,31 @@ title: Welcome to DSL.wiki
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-   actions:
-    - text: Enter the docs
-      link: /allgemein/example/
+  actions:
+    - text: Enter the Wiki
+      link: /allgemein/
       icon: right-arrow
 ---
-import CustomLinkCard from '../../components/CustomLinkCard.astro';
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import CustomLinkCard from "../../components/CustomLinkCard.astro";
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
 
 <CardGrid stagger>
-	<CustomLinkCard title="Allgemeines" icon="pencil" href="/allgemein/example/">
-		Allgemeine Informationen zur Seite
-	</CustomLinkCard>	
-	<CustomLinkCard title="Hardware" icon="add-document"  href="/hardware/">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</CustomLinkCard>
-	<Card title="Internetanbieter" icon="setting">
-		WIP
-	</Card>
-	<Card title="Sonstiges" icon="open-book">
-		Placeholder
-	</Card>
+  <CustomLinkCard title="Allgemeines" icon="pencil" href="/allgemein/example/">
+    Allgemeine Informationen zur Seite
+  </CustomLinkCard>
+  <CustomLinkCard title="Hardware" icon="add-document" href="/hardware/">
+    Übersicht über die Hardware die auf dieser Seite behandelt wird
+  </CustomLinkCard>
+  <CustomLinkCard
+    title="Internetanbieter"
+    icon="setting"
+    href="/internetproviders/"
+  >
+    Übersicht über die aktuellen Internetanbieter in Deutschland
+  </CustomLinkCard>
+  <Card title="Sonstiges" icon="open-book">
+    Placeholder
+  </Card>
 </CardGrid>

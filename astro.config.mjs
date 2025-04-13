@@ -2,20 +2,20 @@
 import { defineConfig, passthroughImageService } from "astro/config";
 import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
+import mdx from "@astrojs/mdx";
+
 // starlight plugins
 import starlightAutoSidebar from "starlight-auto-sidebar";
 import starlightHeadingBadges from "starlight-heading-badges";
 import starlightVersions from "starlight-versions";
 import cloudflare from "@astrojs/cloudflare";
+import emoji from "remark-emoji";
 
 // https://astro.build/config
 export default defineConfig({
   output: "server",
   vite: {
     plugins: [tailwindcss()],
-  },
-  image: {
-    service: passthroughImageService(),
   },
   integrations: [
     starlight({
@@ -58,7 +58,20 @@ export default defineConfig({
           label: "Hardware",
           autogenerate: { directory: "hardware" },
         },
+        {
+          label: "Internetprovider",
+          autogenerate: { directory: "internetproviders" },
+        },
       ],
+    }),
+    mdx({
+      // `syntaxHighlight` inherited from Markdown
+
+      // Markdown `remarkPlugins` ignored,
+      // only `remarkPlugin2` applied.
+      remarkPlugins: [emoji],
+      // `gfm` overridden to `false`
+      gfm: true,
     }),
   ],
 
@@ -66,3 +79,4 @@ export default defineConfig({
     imageService: "passthrough",
   }),
 });
+// https://astro.build/config
