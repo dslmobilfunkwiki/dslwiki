@@ -92,17 +92,6 @@ export default defineConfig({
           'https://stats.dsl.wiki/script.js',
         ],
       },
-      
-      // - If set, it controls how the security headers will be
-      //   generated in the middleware.
-      // - If not set, no security headers will be generated in the
-      //   middleware.
-      securityHeaders: {
-        // - If set, it controls how the CSP (Content Security Policy)
-        //   header will be generated in the middleware.
-        // - If not set, no CSP header will be generated in the
-        //   middleware. (there is no need to specify its inner options)
-      }
     })
   ],
 
