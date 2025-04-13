@@ -3,12 +3,12 @@ title: Welcome to DSL.wiki
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-  tagline:  
-  actions:
+   actions:
     - text: Enter the docs
-      link: /guides/example/
+      link: /allgemein/example/
       icon: right-arrow
 ---
+import CustomLinkCard from '../../components/CustomLinkCard.astro';
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
@@ -18,9 +18,9 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 	<Card title="Update content" icon="pencil">
 		Edit `src/content/docs/index.mdx` to see this page change.
 	</Card>	
-	<Card title="Add new content" icon="add-document">
+	<CustomLinkCard title="Add new content" icon="add-document"  href="/guides/authoring-content/">
 		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
+	</CustomLinkCard>
 	<Card title="Configure your site" icon="setting">
 		Edit your `sidebar` and other config in `astro.config.mjs`.
 	</Card>
@@ -28,4 +28,4 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		Learn more in [the Starlight Docs](https://starlight.astro.build/).
 	</Card>
 </CardGrid>
-
+Allgemeine Informationen zu DSL Tarifen und Technik

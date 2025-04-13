@@ -51,8 +51,8 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: "Guides",
-          autogenerate: { directory: "guides" },
+          label: "Allgemeine Informationen",
+          autogenerate: { directory: "allgemein" },
         },
         {
           label: "Hardware",
