@@ -102,16 +102,6 @@ export default defineConfig({
         //   header will be generated in the middleware.
         // - If not set, no CSP header will be generated in the
         //   middleware. (there is no need to specify its inner options)
-        contentSecurityPolicy: {
-          // - If set, it controls the "default" CSP directives (they
-          //   can be overriden at runtime).
-          // - If not set, the middleware will use a minimal set of
-          //   default directives.
-          cspDirectives: {
-            'default-src': "'none'",
-          },
-
-        }
       }
     })
   ],
