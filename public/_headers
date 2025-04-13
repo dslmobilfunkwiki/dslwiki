@@ -1,3 +1,4 @@
 /*
 Content-Security-Policy: default-src 'self' script-src 'self' stats.dsl.wiki frame-ancestors 'self';
 X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
