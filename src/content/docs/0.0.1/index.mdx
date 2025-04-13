@@ -3,32 +3,31 @@ title: Welcome to DSL.wiki
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
   actions:
-    - text: Enter the docs
-      link: /0.0.1/guides/example/
+    - text: Enter the Wiki
+      link: /0.0.1/allgemein/
       icon: right-arrow
 slug: 0.0.1
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import CustomLinkCard from "../../../components/CustomLinkCard.astro";
 
-## Next steps
+import { Card, CardGrid } from "@astrojs/starlight/components";
 
 <CardGrid stagger>
-  <Card title="Update content" icon="pencil">
-    Edit `src/content/docs/index.mdx` to see this page change.
-  </Card>
+  <CustomLinkCard title="Allgemeines" icon="pencil" href="/allgemein/example/">
+    Allgemeine Informationen zur Seite
+  </CustomLinkCard>
 
-  <Card title="Add new content" icon="add-document">
-    Add Markdown or MDX files to `src/content/docs` to create new pages.
-  </Card>
+  <CustomLinkCard title="Hardware" icon="add-document" href="/hardware/">
+    Übersicht über die Hardware die auf dieser Seite behandelt wird
+  </CustomLinkCard>
 
-  <Card title="Configure your site" icon="setting">
-    Edit your `sidebar` and other config in `astro.config.mjs`.
-  </Card>
+  <CustomLinkCard title="Internetanbieter" icon="setting" href="/internetproviders/">
+    Übersicht über die aktuellen Internetanbieter in Deutschland
+  </CustomLinkCard>
 
-  <Card title="Read the docs" icon="open-book">
-    Learn more in [the Starlight Docs](https://starlight.astro.build/).
+  <Card title="Sonstiges" icon="open-book">
+    Placeholder
   </Card>
 </CardGrid>

@@ -1,15 +1,21 @@
 {
   "sidebar": [
     {
-      "label": "Guides",
+      "label": "Allgemeine Informationen",
       "autogenerate": {
-        "directory": "guides"
+        "directory": "allgemein"
       }
     },
     {
       "label": "Hardware",
       "autogenerate": {
         "directory": "hardware"
+      }
+    },
+    {
+      "label": "Internetprovider",
+      "autogenerate": {
+        "directory": "internetproviders"
       }
     }
   ]
