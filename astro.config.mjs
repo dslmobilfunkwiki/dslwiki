@@ -3,20 +3,16 @@ import { defineConfig, passthroughImageService } from "astro/config";
 import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
 import mdx from "@astrojs/mdx";
-import { resolve } from 'node:path'
 
 // starlight plugins
 import starlightAutoSidebar from "starlight-auto-sidebar";
 import starlightHeadingBadges from "starlight-heading-badges";
 import starlightVersions from "starlight-versions";
-import cloudflare from "@astrojs/cloudflare";
 import emoji from "remark-emoji";
-import { shield } from '@kindspells/astro-shield'
 
 import yeskunallumami from "@yeskunall/astro-umami";
 
-const rootDir = new URL('.', import.meta.url).pathname
-const modulePath = resolve(rootDir, 'src', 'generated', 'sriHashes.mjs')
+import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
@@ -84,19 +80,10 @@ export default defineConfig({
       id: "e92c091d-a8ac-486f-804b-a19bf691f109",
       endpointUrl: "https://stats.dsl.wiki/",
     }),
-   shield({
-      sri: {
-        enableMiddleware: true,   // MUST be enabled for dynamic pages!
-        hashesModule: modulePath, // SHOULD be set!
-        scriptsAllowListUrls: [
-          'https://stats.dsl.wiki/script.js',
-        ],
-      },
-    })
   ],
 
-  adapter: cloudflare({
-    imageService: "passthrough",
+  adapter: node({
+    mode: "standalone",
   }),
 });
 // https://astro.build/config
