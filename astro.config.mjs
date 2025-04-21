@@ -21,6 +21,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  server: { port: 9000, host: true},
   integrations: [
     starlight({
       plugins: [
