@@ -6,6 +6,8 @@
 
   # Use https://search.nixos.org/packages to find packages
   packages = [
+    pkgs.gh
+    pkgs.gh-markdown-preview
     pkgs.pnpm
     # pkgs.go
     # pkgs.python311
