@@ -75,7 +75,7 @@ export default defineConfig({
       // Markdown `remarkPlugins` ignored,
       // only `remarkPlugin2` applied.
       remarkPlugins: [emoji],
-      // `gfm` overridden to `false`
+      // `gfm` overridden to `true`
       gfm: true,
     }),
     yeskunallumami({
