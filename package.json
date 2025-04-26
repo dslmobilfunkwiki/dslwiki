@@ -22,6 +22,7 @@
     "remark-gfm": "^4.0.1",
     "starlight-auto-sidebar": "^0.1.1",
     "starlight-heading-badges": "^0.5.0",
+    "starlight-sidebar-topics": "^0.6.0",
     "starlight-versions": "^0.5.3",
     "tailwindcss": "^4.1.4"
   },

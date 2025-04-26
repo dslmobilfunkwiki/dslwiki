@@ -41,6 +41,9 @@ importers:
       starlight-heading-badges:
         specifier: ^0.5.0
         version: 0.5.0(@astrojs/starlight@0.33.2(astro@5.7.5(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1)))
+      starlight-sidebar-topics:
+        specifier: ^0.6.0
+        version: 0.6.0(@astrojs/starlight@0.33.2(astro@5.7.5(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1)))
       starlight-versions:
         specifier: ^0.5.3
         version: 0.5.3(@astrojs/starlight@0.33.2(astro@5.7.5(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1)))
@@ -1935,6 +1938,12 @@ packages:
 
   starlight-heading-badges@0.5.0:
     resolution: {integrity: sha512-B2acUppMY2seU8ab5wHTDlRo1zDkTAPBDtLMPq+5o01k5INmN5OlFsHwpSBvdqEf2fomUA7KcvnrRrUL3InNsQ==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@astrojs/starlight': '>=0.32.0'
+
+  starlight-sidebar-topics@0.6.0:
+    resolution: {integrity: sha512-ysmOR7zaHYKtk18/mpW4MbEMDioR/ZBsisu9bdQrq0v9BlHWpW7gAdWlqFWO9zdv1P7l0Mo1WKd0wJ0UtqOVEQ==}
     engines: {node: '>=18'}
     peerDependencies:
       '@astrojs/starlight': '>=0.32.0'
@@ -4695,6 +4704,11 @@ snapshots:
       unist-util-visit: 5.0.0
     transitivePeerDependencies:
       - supports-color
+
+  starlight-sidebar-topics@0.6.0(@astrojs/starlight@0.33.2(astro@5.7.5(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1))):
+    dependencies:
+      '@astrojs/starlight': 0.33.2(astro@5.7.5(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1))
+      picomatch: 4.0.2
 
   starlight-versions@0.5.3(@astrojs/starlight@0.33.2(astro@5.7.5(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1))):
     dependencies:

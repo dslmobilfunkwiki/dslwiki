@@ -5,10 +5,10 @@ import tailwindcss from "@tailwindcss/vite";
 import mdx from "@astrojs/mdx";
 
 // starlight plugins
-import starlightAutoSidebar from "starlight-auto-sidebar";
 import starlightHeadingBadges from "starlight-heading-badges";
-import starlightVersions from "starlight-versions";
 import emoji from "remark-emoji";
+import starlightSidebarTopics from "starlight-sidebar-topics";
+import starlightAutoSidebar from 'starlight-auto-sidebar'
 
 import yeskunallumami from "@yeskunall/astro-umami";
 
@@ -16,20 +16,49 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://dsl.wiki',
+  site: "https://dsl.wiki",
   output: "server",
   vite: {
     plugins: [tailwindcss()],
   },
-  server: { port: 9000, host: true},
+  server: { port: 9000, host: true },
   integrations: [
     starlight({
       plugins: [
-        starlightAutoSidebar(),
-        starlightHeadingBadges(),
-        starlightVersions({
-          versions: [{ slug: "0.0.1" }],
-        }),
+        starlightSidebarTopics([
+          {
+            label: "Allgemein",
+            link: "/allgemein/",
+            icon: "open-book",
+            id: "learn",
+            items: [{ label: "Allgemein", autogenerate: { directory: "allgemein" } }],
+          },
+          {
+            label: "Internetanbieter",
+            link: "/internetproviders/",
+            icon: "open-book",
+            id: "learn2",
+            items: [
+              {
+                label: "Internetanbieter",
+                autogenerate: { directory: "internetproviders" },
+              },
+            ],
+          },
+          {
+            label: "Hardware ",
+            link: "/hardware/",
+            icon: "open-book",
+            id: "learn3",
+            items: [
+              {
+                label: "Hardware",
+                autogenerate: { directory: "hardware" },
+              },
+            ],
+          },
+        ]),
+        starlightHeadingBadges()
       ],
       customCss: [
         // Relative path to your custom CSS file
@@ -52,20 +81,6 @@ export default defineConfig({
           icon: "github",
           label: "GitHub",
           href: "https://github.com/dslmobilfunkwiki/dslwiki",
-        },
-      ],
-      sidebar: [
-        {
-          label: "Allgemeine Informationen",
-          autogenerate: { directory: "allgemein" },
-        },
-        {
-          label: "Hardware",
-          autogenerate: { directory: "hardware" },
-        },
-        {
-          label: "Internetprovider",
-          autogenerate: { directory: "internetproviders" },
         },
       ],
     }),
