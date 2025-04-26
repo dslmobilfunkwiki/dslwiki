@@ -82,6 +82,12 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           
+  update:
+    name: Update server image
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:          
       - name: Webhook
         uses: joelwmale/webhook-action@master
         with:
