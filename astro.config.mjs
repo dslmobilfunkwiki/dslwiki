@@ -24,6 +24,8 @@ export default defineConfig({
   server: { port: 9000, host: true },
   integrations: [
     starlight({
+      pagination: false,
+      lastUpdated: true,
       plugins: [
         starlightSidebarTopics([
           {
