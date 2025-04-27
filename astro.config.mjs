@@ -17,6 +17,9 @@ import node from "@astrojs/node";
 // https://astro.build/config
 export default defineConfig({
   site: "https://dsl.wiki",
+  editLink: {
+    baseUrl: "https://github.com/dslmobilfunkwiki/dslwiki/edit/main/",
+  },
   output: "server",
   vite: {
     plugins: [tailwindcss()],
