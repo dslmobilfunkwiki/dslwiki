@@ -3,4 +3,3 @@ services:
   web:
     image: ghcr.io/dslmobilfunkwiki/dslwiki:latest
     restart: unless-stopped
-    container_name: dsl-wiki
