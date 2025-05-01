@@ -8,7 +8,7 @@ import mdx from "@astrojs/mdx";
 import starlightHeadingBadges from "starlight-heading-badges";
 import emoji from "remark-emoji";
 import starlightSidebarTopics from "starlight-sidebar-topics";
-import starlightAutoSidebar from 'starlight-auto-sidebar'
+import starlightAutoSidebar from "starlight-auto-sidebar";
 
 import yeskunallumami from "@yeskunall/astro-umami";
 
@@ -28,6 +28,10 @@ export default defineConfig({
       editLink: {
         baseUrl: "https://github.com/dslmobilfunkwiki/dslwiki/edit/main/",
       },
+      components: {
+        // Override the default `Sidebar` component with a custom one.
+        Sidebar: "./src/components/Sidebar.astro",
+      },
       lastUpdated: true,
       plugins: [
         starlightSidebarTopics([
@@ -36,7 +40,9 @@ export default defineConfig({
             link: "/allgemein/",
             icon: "open-book",
             id: "learn",
-            items: [{ label: "Allgemein", autogenerate: { directory: "allgemein" } }],
+            items: [
+              { label: "Allgemein", autogenerate: { directory: "allgemein" } },
+            ],
           },
           {
             label: "Internetanbieter",
@@ -63,24 +69,13 @@ export default defineConfig({
             ],
           },
         ]),
-        starlightHeadingBadges()
+        starlightHeadingBadges(),
       ],
       customCss: [
         // Relative path to your custom CSS file
         "./src/styles/custom.css",
       ],
       title: "DSL Wiki",
-      defaultLocale: "root", // optional
-      locales: {
-        root: {
-          label: "Deutsch",
-          lang: "de", // lang is required for root locales
-        },
-        en: {
-          label: "English",
-          lang: "en", // lang is required for root locales
-        },
-      },
       social: [
         {
           icon: "github",
