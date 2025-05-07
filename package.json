@@ -19,6 +19,7 @@
     "astro": "^5.7.10",
     "daisyui": "^5.0.35",
     "remark-emoji": "^5.0.1",
+    "remark-extended-table": "^2.0.3",
     "remark-gfm": "^4.0.1",
     "starlight-auto-sidebar": "^0.1.1",
     "starlight-heading-badges": "^0.5.0",

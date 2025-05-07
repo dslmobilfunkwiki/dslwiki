@@ -9,6 +9,7 @@ import starlightHeadingBadges from "starlight-heading-badges";
 import emoji from "remark-emoji";
 import starlightSidebarTopics from "starlight-sidebar-topics";
 import starlightAutoSidebar from "starlight-auto-sidebar";
+import { remarkExtendedTable, extendedTableHandlers } from 'remark-extended-table';
 
 import yeskunallumami from "@yeskunall/astro-umami";
 
@@ -89,9 +90,12 @@ export default defineConfig({
 
       // Markdown `remarkPlugins` ignored,
       // only `remarkPlugin2` applied.
-      remarkPlugins: [emoji],
+      remarkPlugins: [emoji,remarkExtendedTable],
       // `gfm` overridden to `true`
       gfm: true,
+      remarkRehype: {
+        handlers: { ...extendedTableHandlers },
+      }
     }),
     yeskunallumami({
       id: "e92c091d-a8ac-486f-804b-a19bf691f109",

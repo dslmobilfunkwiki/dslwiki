@@ -32,6 +32,9 @@ importers:
       remark-emoji:
         specifier: ^5.0.1
         version: 5.0.1
+      remark-extended-table:
+        specifier: ^2.0.3
+        version: 2.0.3(mdast-util-gfm-table@2.0.0)(micromark-extension-gfm-table@2.1.1)(micromark@4.0.2)(remark-gfm@4.0.1)(remark-parse@11.0.0)(unified@11.0.5)
       remark-gfm:
         specifier: ^4.0.1
         version: 4.0.1
@@ -1437,6 +1440,11 @@ packages:
   mdast-util-directive@3.1.0:
     resolution: {integrity: sha512-I3fNFt+DHmpWCYAT7quoM6lHf9wuqtI+oCOfvILnoicNIqjh5E3dEJWiXuYME2gNe8vl1iMQwyUHa7bgFmak6Q==}
 
+  mdast-util-extended-table@2.0.3:
+    resolution: {integrity: sha512-0iI/BQt2EhzBDmg1NBxA/PfQVIej//csZVbHlrQzZkIpf0acaMzafKhkYcL0jSkkzT0456dxFKs4mo6w6s6lhg==}
+    peerDependencies:
+      mdast-util-gfm-table: ^2.0.0
+
   mdast-util-find-and-replace@3.0.2:
     resolution: {integrity: sha512-Tmd1Vg/m3Xz43afeNxDIhWRtFZgM2VLyaf4vSTYwudTyeuTneoL3qtWMA5jeLyz/O1vDJmmV4QuScFCA2tBPwg==}
 
@@ -1496,6 +1504,12 @@ packages:
 
   micromark-extension-directive@3.0.2:
     resolution: {integrity: sha512-wjcXHgk+PPdmvR58Le9d7zQYWy+vKEU9Se44p2CrCDPiLr2FMyiT4Fyb5UFKFC66wGB3kPlgD7q3TnoqPS7SZA==}
+
+  micromark-extension-extended-table@2.0.3:
+    resolution: {integrity: sha512-EiY5KVzlamDZ+7rYJIOHiBLJdPLi0RYz7/EF26EYr9IGFVkQQIDNZVfIdwiDqRsUnac3lElg3JvjMTsluP69tQ==}
+    peerDependencies:
+      micromark: ^4.0.0
+      micromark-extension-gfm-table: ^2.0.0
 
   micromark-extension-frontmatter@2.0.0:
     resolution: {integrity: sha512-C4AkuM3dA58cgZha7zVnuVxBhDsbttIMiytjgsM2XbHAB2faRVaHRle40558FBN+DJcrLNCoqG5mlrpdU4cRtg==}
@@ -1801,6 +1815,13 @@ packages:
     resolution: {integrity: sha512-QCqTSvcZ65Ym+P+VyBKd4JfJfh7icMl7cIOGVmPMzWkDtdD8pQ0nQG7yxGolVIiMzSx90EZ7SwNiVpYpfTxn7w==}
     engines: {node: '>=18'}
 
+  remark-extended-table@2.0.3:
+    resolution: {integrity: sha512-XjdccSpz/SmKLkrNi4KD8Nl20mfMk9KwUiD2m5HLjkS8bowxxS+Vq1mz5J9V/ZnHCtUiJ0pHr/gEC2HUopcI1A==}
+    peerDependencies:
+      remark-gfm: ^4.0.0
+      remark-parse: ^11.0.0
+      unified: ^11.0.0
+
   remark-frontmatter@5.0.0:
     resolution: {integrity: sha512-XTFYvNASMe5iPN0719nPrdItC9aU0ssC4v14mH1BCi1u0n1gAocqcujWUrByftZTbLhRtiKRyjYTSIOcr69UVQ==}
 
@@ -2044,6 +2065,9 @@ packages:
 
   unifont@0.4.1:
     resolution: {integrity: sha512-zKSY9qO8svWYns+FGKjyVdLvpGPwqmsCjeJLN1xndMiqxHWBAhoWDMYMG960MxeV48clBmG+fDP59dHY1VoZvg==}
+
+  unist-builder@4.0.0:
+    resolution: {integrity: sha512-wmRFnH+BLpZnTKpc5L7O67Kac89s9HMrtELpnNaE6TAobq5DTZZs5YaTQfAZBA9bFPECx2uVAPO31c+GVug8mg==}
 
   unist-util-find-after@5.0.0:
     resolution: {integrity: sha512-amQa0Ep2m6hE2g72AugUItjbuM8X8cGQnFoHk0pGfrFeT9GZhzN5SW8nRsiGKK7Aif4CrACPENkA6P/Lw6fHGQ==}
@@ -3710,6 +3734,24 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  mdast-util-extended-table@2.0.3(mdast-util-gfm-table@2.0.0)(micromark-extension-gfm-table@2.1.1)(micromark@4.0.2):
+    dependencies:
+      '@types/hast': 3.0.4
+      '@types/mdast': 4.0.4
+      '@types/unist': 3.0.3
+      mdast-util-from-markdown: 2.0.2
+      mdast-util-gfm-table: 2.0.0
+      mdast-util-to-hast: 13.2.0
+      mdast-util-to-markdown: 2.1.2
+      micromark-extension-extended-table: 2.0.3(micromark-extension-gfm-table@2.1.1)(micromark@4.0.2)
+      unist-builder: 4.0.0
+      unist-util-position: 5.0.0
+      unist-util-visit: 5.0.0
+    transitivePeerDependencies:
+      - micromark
+      - micromark-extension-gfm-table
+      - supports-color
+
   mdast-util-find-and-replace@3.0.2:
     dependencies:
       '@types/mdast': 4.0.4
@@ -3914,6 +3956,14 @@ snapshots:
       micromark-util-symbol: 2.0.1
       micromark-util-types: 2.0.2
       parse-entities: 4.0.2
+
+  micromark-extension-extended-table@2.0.3(micromark-extension-gfm-table@2.1.1)(micromark@4.0.2):
+    dependencies:
+      micromark: 4.0.2
+      micromark-extension-gfm-table: 2.1.1
+      micromark-util-chunked: 2.0.1
+      micromark-util-symbol: 2.0.1
+      micromark-util-types: 2.0.2
 
   micromark-extension-frontmatter@2.0.0:
     dependencies:
@@ -4410,6 +4460,19 @@ snapshots:
       node-emoji: 2.2.0
       unified: 11.0.5
 
+  remark-extended-table@2.0.3(mdast-util-gfm-table@2.0.0)(micromark-extension-gfm-table@2.1.1)(micromark@4.0.2)(remark-gfm@4.0.1)(remark-parse@11.0.0)(unified@11.0.5):
+    dependencies:
+      mdast-util-extended-table: 2.0.3(mdast-util-gfm-table@2.0.0)(micromark-extension-gfm-table@2.1.1)(micromark@4.0.2)
+      micromark-extension-extended-table: 2.0.3(micromark-extension-gfm-table@2.1.1)(micromark@4.0.2)
+      remark-gfm: 4.0.1
+      remark-parse: 11.0.0
+      unified: 11.0.5
+    transitivePeerDependencies:
+      - mdast-util-gfm-table
+      - micromark
+      - micromark-extension-gfm-table
+      - supports-color
+
   remark-frontmatter@5.0.0:
     dependencies:
       '@types/mdast': 4.0.4
@@ -4783,6 +4846,10 @@ snapshots:
     dependencies:
       css-tree: 3.1.0
       ohash: 2.0.11
+
+  unist-builder@4.0.0:
+    dependencies:
+      '@types/unist': 3.0.3
 
   unist-util-find-after@5.0.0:
     dependencies:
