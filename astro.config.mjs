@@ -26,6 +26,7 @@ export default defineConfig({
   server: { port: 9000, host: true },
   integrations: [
     starlight({
+      defaultLocale: 'de',
       pagination: false,
       editLink: {
         baseUrl: "https://github.com/dslmobilfunkwiki/dslwiki/edit/main/",
