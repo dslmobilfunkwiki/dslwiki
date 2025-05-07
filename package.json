@@ -11,6 +11,7 @@
     "deploy": "pnpm run build && wrangler deploy"
   },
   "dependencies": {
+    "@adobe/remark-gridtables": "^3.0.13",
     "@astrojs/mdx": "^4.2.6",
     "@astrojs/node": "^9.2.1",
     "@astrojs/starlight": "^0.34.2",

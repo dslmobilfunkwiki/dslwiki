@@ -10,6 +10,7 @@ import emoji from "remark-emoji";
 import starlightSidebarTopics from "starlight-sidebar-topics";
 import starlightAutoSidebar from "starlight-auto-sidebar";
 import { remarkExtendedTable, extendedTableHandlers } from 'remark-extended-table';
+import remarkGridTable from '@adobe/remark-gridtables';
 
 import yeskunallumami from "@yeskunall/astro-umami";
 
