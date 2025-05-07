@@ -81,3 +81,17 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           platforms: linux/arm64
+          
+  update:
+    name: Update server image
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:          
+
+    - name: Invoke deployment hook
+      uses: distributhor/workflow-webhook@v3
+      with:
+        webhook_url: ${{ secrets.WEBHOOK_URL }}
+        webhook_auth_type: bearer
+        webhook_auth: ${{ secrets.WEBHOOK_SECRET }}
