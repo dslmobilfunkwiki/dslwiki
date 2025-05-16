@@ -8,7 +8,11 @@ import mdx from "@astrojs/mdx";
 import starlightHeadingBadges from "starlight-heading-badges";
 import emoji from "remark-emoji";
 import starlightSidebarTopics from "starlight-sidebar-topics";
-import { remarkExtendedTable, extendedTableHandlers } from 'remark-extended-table';
+import {
+  remarkExtendedTable,
+  extendedTableHandlers,
+} from "remark-extended-table";
+import { viewTransitions } from "astro-vtbot/starlight-view-transitions";
 
 import yeskunallumami from "@yeskunall/astro-umami";
 import node from "@astrojs/node";
@@ -23,7 +27,7 @@ export default defineConfig({
   server: { port: 9000, host: true },
   integrations: [
     starlight({
-      defaultLocale: 'de',
+      defaultLocale: "de",
       pagination: false,
       editLink: {
         baseUrl: "https://github.com/dslmobilfunkwiki/dslwiki/edit/main/",
@@ -34,6 +38,7 @@ export default defineConfig({
       },
       lastUpdated: true,
       plugins: [
+        viewTransitions(),
         starlightSidebarTopics([
           {
             label: "Allgemein",
@@ -89,12 +94,12 @@ export default defineConfig({
 
       // Markdown `remarkPlugins` ignored,
       // only `remarkPlugin2` applied.
-      remarkPlugins: [emoji,remarkExtendedTable],
+      remarkPlugins: [emoji, remarkExtendedTable],
       // `gfm` overridden to `true`
       gfm: true,
       remarkRehype: {
         handlers: { ...extendedTableHandlers },
-      }
+      },
     }),
     yeskunallumami({
       id: "e92c091d-a8ac-486f-804b-a19bf691f109",

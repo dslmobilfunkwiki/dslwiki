@@ -22,4 +22,4 @@ table {
     /* Protect the main content from being compressed */
     min-width: 0;
     flex-shrink: 0;
-  }
+  } 
