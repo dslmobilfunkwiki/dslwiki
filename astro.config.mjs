@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig, passthroughImageService } from "astro/config";
+import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
 import mdx from "@astrojs/mdx";
@@ -8,12 +8,9 @@ import mdx from "@astrojs/mdx";
 import starlightHeadingBadges from "starlight-heading-badges";
 import emoji from "remark-emoji";
 import starlightSidebarTopics from "starlight-sidebar-topics";
-import starlightAutoSidebar from "starlight-auto-sidebar";
 import { remarkExtendedTable, extendedTableHandlers } from 'remark-extended-table';
-import remarkGridTable from '@adobe/remark-gridtables';
 
 import yeskunallumami from "@yeskunall/astro-umami";
-
 import node from "@astrojs/node";
 
 // https://astro.build/config
