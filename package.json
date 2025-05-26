@@ -13,7 +13,7 @@
   "dependencies": {
     "@adobe/remark-gridtables": "^3.0.13",
     "@astrojs/mdx": "^4.2.6",
-    "@astrojs/node": "^9.2.1",
+    "@astrojs/node": "^9.2.2",
     "@astrojs/starlight": "^0.34.3",
     "@tailwindcss/vite": "^4.1.7",
     "@yeskunall/astro-umami": "^0.0.5",
