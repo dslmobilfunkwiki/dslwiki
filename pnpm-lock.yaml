@@ -1093,8 +1093,8 @@ packages:
   '@vtbag/turn-signal@1.3.1':
     resolution: {integrity: sha512-6rWkG+ik3U+KQGI94yNOrOh5QedB9zmP/8H51X5WQwrJz8m2MAU5YwGRRcweO/dJ6wW/Bn7OsgC1vRURnwrvCg==}
 
-  '@vtbag/utensil-drawer@1.2.6':
-    resolution: {integrity: sha512-68eQis39Wr751F3OrqfvAT2zTzXNk/lBJerIObzBEaq4UT7jzOLTzj4+IibYMnf+dh+ZdPi79pwhaPQF2neKHg==}
+  '@vtbag/utensil-drawer@1.2.7':
+    resolution: {integrity: sha512-OfbvtIV+m2u2KSG8mHBXUi1hPoTOtJeMGl9yAYiBUiZIuVLRqaoP8tc1tZIYnen9Prp92MDSQuFwEPTxD/mO/g==}
 
   '@yeskunall/astro-umami@0.0.5':
     resolution: {integrity: sha512-PRxSo6Gox5+GC/Mjb1Q4/l7zioI0J7uxw0N8WjejEyMBD6+pJiDBcetmA+JLY39fWPtupq0181jsAUYEPraSfw==}
@@ -1167,9 +1167,9 @@ packages:
   astro-vtbot@2.1.3:
     resolution: {integrity: sha512-fiKL+/gc3ZNFv8SheYBY1VHGdnOZLtSnzYIb76b68b8yItQH4YIccrHRihWy9Qkybi6q2zsbZ6XgiQSK/09F5A==}
 
-  astro@5.7.13:
-    resolution: {integrity: sha512-cRGq2llKOhV3XMcYwQpfBIUcssN6HEK5CRbcMxAfd9OcFhvWE7KUy50zLioAZVVl3AqgUTJoNTlmZfD2eG0G1w==}
-    engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
+  astro@5.8.0:
+    resolution: {integrity: sha512-G57ELkdIntDiSrucA5lQaRtBOjquaZ9b9NIwoz2f471ZuuJcynLjWgItgBzlrz5UMY4WqnFbVWUCKlJb7nt9bA==}
+    engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
   axobject-query@4.1.0:
@@ -3576,9 +3576,9 @@ snapshots:
 
   '@vtbag/turn-signal@1.3.1': {}
 
-  '@vtbag/utensil-drawer@1.2.6': {}
+  '@vtbag/utensil-drawer@1.2.7': {}
 
-  '@yeskunall/astro-umami@0.0.5(astro@5.7.13(@types/node@22.15.18)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.40.2)(typescript@5.8.3)(yaml@2.8.0))':
+  '@yeskunall/astro-umami@0.0.5(astro@5.8.0(@types/node@22.15.24)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))':
     dependencies:
       astro: 5.8.0(@types/node@22.15.24)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
 
@@ -3632,9 +3632,9 @@ snapshots:
       '@vtbag/element-crossing': 1.1.0
       '@vtbag/inspection-chamber': 1.0.21
       '@vtbag/turn-signal': 1.3.1
-      '@vtbag/utensil-drawer': 1.2.6
+      '@vtbag/utensil-drawer': 1.2.7
 
-  astro@5.7.13(@types/node@22.15.18)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.40.2)(typescript@5.8.3)(yaml@2.8.0):
+  astro@5.8.0(@types/node@22.15.24)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0):
     dependencies:
       '@astrojs/compiler': 2.12.0
       '@astrojs/internal-helpers': 0.6.1
