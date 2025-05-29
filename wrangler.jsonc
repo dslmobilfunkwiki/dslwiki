@@ -10,5 +10,8 @@
       "pattern": "dsl.wiki",
       "custom_domain": true
     }
-  ]
+  ],
+  "placement": {
+    "mode": "smart"
+  }
   }
