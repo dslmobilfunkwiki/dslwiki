@@ -17,6 +17,8 @@ import { viewTransitions } from "astro-vtbot/starlight-view-transitions";
 import yeskunallumami from "@yeskunall/astro-umami";
 import node from "@astrojs/node";
 
+import cloudflare from "@astrojs/cloudflare";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://dsl.wiki",
@@ -107,8 +109,6 @@ export default defineConfig({
     }),
   ],
 
-  adapter: node({
-    mode: "standalone",
-  }),
+  adapter: cloudflare(),
 });
 // https://astro.build/config
