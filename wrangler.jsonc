@@ -1,0 +1,14 @@
+{
+    "name": "dsl-wiki",
+    // Update to today's date
+    "compatibility_date": "2025-03-25",
+    "assets": {
+      "directory": "./dist"
+    },
+    "routes": [
+    {
+      "pattern": "dsl.wiki",
+      "custom_domain": true
+    }
+  ]
+  }
