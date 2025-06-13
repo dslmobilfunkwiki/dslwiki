@@ -1,17 +1,21 @@
 ---
-title: O2 Homebox
+title: O2
 sidebar:
   # Set a custom label for the link
-  label: O2 Homebox
+  label: O2
   collapsed: true
-order: 3
 ---
 
-import { Aside } from "@astrojs/starlight/components";
+import { Aside, Tabs, TabItem } from "@astrojs/starlight/components"
+
+<Tabs>
+<TabItem label="DSL">
+|        Model        |        ADSL        |        VDSL        |       SVDSL        | Glasfaser |
+| :-----------------: | :----------------: | :----------------: | :----------------: | :-------: |
+| O2 HomeBox 3 (6642) | :white_check_mark: | :white_check_mark: | :white_check_mark: |    :x:    |
+</TabItem>
+</Tabs>
 
 <Aside type="danger" title="Achtung">
   Die O² Homeboxen werden ***nicht*** mehr aktiv vertrieben!
 </Aside>
-| Model | ADSL | VDSL | SVDSL | Provider only | 
-| :---------: | :---------: |:---------: |:---------: | :---------: |
-| O2 HomeBox 3 (6642) | | | |
