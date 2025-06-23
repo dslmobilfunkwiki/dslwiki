@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@adobe/remark-gridtables": "^3.0.14",
-    "@astrojs/cloudflare": "^12.5.5",
+    "@astrojs/cloudflare": "^12.6.0",
     "@astrojs/mdx": "^4.3.0",
     "@astrojs/node": "^9.2.2",
     "@astrojs/starlight": "^0.34.4",
