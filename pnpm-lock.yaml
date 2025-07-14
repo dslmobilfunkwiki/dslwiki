@@ -67,8 +67,8 @@ importers:
         version: 4.23.0(@cloudflare/workers-types@4.20250705.0)
     devDependencies:
       astro-vtbot:
-        specifier: ^2.1.5
-        version: 2.1.5
+        specifier: ^2.1.6
+        version: 2.1.6
       prettier:
         specifier: ^3.6.2
         version: 3.6.2
@@ -1097,14 +1097,14 @@ packages:
   '@vtbag/element-crossing@1.1.0':
     resolution: {integrity: sha512-1YL609KPwhHUKRrVNfoogQCVJPfFrE5DubOLcCJZLHVCjWZ2ZAPcaq1wR2OP6nXD0Ok9JLX41YsEtYBYzw6CxQ==}
 
-  '@vtbag/inspection-chamber@1.0.21':
-    resolution: {integrity: sha512-7TWv9W7Nx5Dkp6Uak9gcLuaF3v10ErEuCcSiUbkN8GTvgjuAIHuV5EKTg+dI1wd7JRoWU840Jf4Avxa+yNyUmw==}
+  '@vtbag/inspection-chamber@1.0.22':
+    resolution: {integrity: sha512-M0iVmgUEjTmjX3/LEVxpNFjqZSdKN/y6otH4aD6x8c3HhJjlD9OwStJaYHS8EoiQtvmPWIdG79iXOCesXTGfaQ==}
 
   '@vtbag/turn-signal@1.3.1':
     resolution: {integrity: sha512-6rWkG+ik3U+KQGI94yNOrOh5QedB9zmP/8H51X5WQwrJz8m2MAU5YwGRRcweO/dJ6wW/Bn7OsgC1vRURnwrvCg==}
 
-  '@vtbag/utensil-drawer@1.2.8':
-    resolution: {integrity: sha512-LEDmKkQFopa7hA3UklhX0I7KkK9r3eKPdkXvJBklLF+2GF5bczocCuD8YG3tejkwWlD5KE998dSr5Df6FuN1Mg==}
+  '@vtbag/utensil-drawer@1.2.10':
+    resolution: {integrity: sha512-IfJP0MzaYo8ety+h/rZ7mUgdtBdIhMwZH2U4Hd74jNDFFlT8/SK3ROF8WuEzvaFiACf8l+ViMzqp9oZH71egrw==}
 
   '@yeskunall/astro-umami@0.0.6':
     resolution: {integrity: sha512-fEp4jwi33CKRGJcAQSoCv61OGwBqYgmxkyVHFPdb4X7H2SOMVSH/u/6u3cfPrYMHVxw8j5NCz+LAqprxaAc1Xw==}
@@ -1174,8 +1174,8 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0
 
-  astro-vtbot@2.1.5:
-    resolution: {integrity: sha512-sZLRjxhyXDiHPJc3kCEYRJjD3KYKunF2vlb2F0pYkFoIeTjVWuBdnkgGegz9Nc5zbNNRODtn7F5JVvOuTD5hgQ==}
+  astro-vtbot@2.1.6:
+    resolution: {integrity: sha512-zmd8TQ4fqT3KxRrDpMVmp8LmtYKjMgC8c3ScmXlNIUdfhukArQ7vdOzSYlF4asNFMHli8Pr5Vx1HbsTBklGIpA==}
 
   astro@5.11.0:
     resolution: {integrity: sha512-MEICntERthUxJPSSDsDiZuwiCMrsaYy3fnDhp4c6ScUfldCB8RBnB/myYdpTFXpwYBy6SgVsHQ1H4MuuA7ro/Q==}
@@ -3604,11 +3604,11 @@ snapshots:
 
   '@vtbag/element-crossing@1.1.0': {}
 
-  '@vtbag/inspection-chamber@1.0.21': {}
+  '@vtbag/inspection-chamber@1.0.22': {}
 
   '@vtbag/turn-signal@1.3.1': {}
 
-  '@vtbag/utensil-drawer@1.2.8': {}
+  '@vtbag/utensil-drawer@1.2.10': {}
 
   '@yeskunall/astro-umami@0.0.6(astro@5.11.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.44.2)(typescript@5.8.3)(yaml@2.8.0))':
     dependencies:
@@ -3658,13 +3658,13 @@ snapshots:
       astro: 5.11.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.44.2)(typescript@5.8.3)(yaml@2.8.0)
       rehype-expressive-code: 0.41.3
 
-  astro-vtbot@2.1.5:
+  astro-vtbot@2.1.6:
     dependencies:
       '@vtbag/cam-shaft': 1.0.6
       '@vtbag/element-crossing': 1.1.0
-      '@vtbag/inspection-chamber': 1.0.21
+      '@vtbag/inspection-chamber': 1.0.22
       '@vtbag/turn-signal': 1.3.1
-      '@vtbag/utensil-drawer': 1.2.8
+      '@vtbag/utensil-drawer': 1.2.10
 
   astro@5.11.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.44.2)(typescript@5.8.3)(yaml@2.8.0):
     dependencies:
