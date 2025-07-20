@@ -65,7 +65,7 @@ export default defineConfig({
             ],
           },
           {
-            label: "Hardware ",
+            label: "Hardware",
             link: "/hardware/",
             icon: "open-book",
             id: "learn3",
