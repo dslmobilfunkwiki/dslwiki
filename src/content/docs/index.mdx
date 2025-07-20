@@ -1,37 +1,49 @@
 ---
-title: Wilkommen im DSL.wiki
+title: DSL.wiki
 template: splash
 hero:
+  tagline: Technische Dokumentation für Festnetz-Internet in Deutschland
   actions:
-    - text: Enter the Wiki
+    - text: Übersicht
       link: /allgemein/
       icon: right-arrow
+      variant: primary
+    - text: Anbieter
+      link: /anbieter/
+      icon: external
+      variant: secondary
+    - text: Hardware
+      link: /hardware/
+      icon: setting
+      variant: secondary
 order: 0
 ---
 
 import CustomLinkCard from "../../components/CustomLinkCard.astro";
-
 import { Card, CardGrid } from "@astrojs/starlight/components";
 
+## Hauptbereiche
+
 <CardGrid stagger>
-  <CustomLinkCard title="Allgemeines" icon="pencil" href="/allgemein/">
-    Allgemeine Informationen zur Seite
+  <CustomLinkCard title="Internetanbieter" icon="rocket" href="/anbieter/">
+    Telekom, Vodafone, O2 und weitere - Tarife, Technologien und Verfügbarkeit
   </CustomLinkCard>
-  <CustomLinkCard title="Hardware" icon="add-document" href="/hardware/">
-    Übersicht über die Hardware die auf dieser Seite behandelt wird
+  
+  <CustomLinkCard title="Hardware & Router" icon="setting" href="/hardware/">
+    Speedport, FritzBox, EasyBox - Modelle, Kompatibilität und technische Daten
   </CustomLinkCard>
-  <CustomLinkCard
-    title="Internetanbieter"
-    icon="setting"
-    href="/internetproviders/"
-  >
-    Übersicht über die aktuellen Internetanbieter. <br />
-    Aktuell nur die, die in Deutschland aktiv sind
+  
+  <CustomLinkCard title="Internet-Technologien" icon="information" href="/allgemein/technologien/">
+    DSL, VDSL, Kabel, Glasfaser - Vergleich und technische Grundlagen
   </CustomLinkCard>
-  <Card title="Status" icon="open-book">
-    <input type="checkbox" disabled /> :construction: Internet Provider <br />
-    <input type="checkbox" disabled /> :construction: Hardware
-    <br />
-    <input type="checkbox" disabled /> Sonstiges
-  </Card>
+  
+  <CustomLinkCard title="Verfügbarkeit prüfen" icon="magnifier" href="/allgemein/verfuegbarkeit/">
+    Tools und Anleitungen zur Verfügbarkeitsprüfung verschiedener Anbieter
+  </CustomLinkCard>
 </CardGrid>
+
+## Was ist dokumentiert
+
+**Festnetz-Internet in Deutschland:** DSL, VDSL, Kabel- und Glasfaser-Technologien mit technischen Spezifikationen, Anbieter-Tarifen und Hardware-Kompatibilität. Fokus auf Privatkunden und deutsche Anbieter.
+
+**Nicht enthalten:** Mobilfunk-Tarife (außer Hybrid), internationale Anbieter, Business-Tarife.

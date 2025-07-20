@@ -1,0 +1,58 @@
+---
+title: AVM FritzBox
+description: Übersicht über AVM FritzBox Router
+order: 1
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
+## FritzBox Modelle
+
+<Tabs>
+<TabItem label="DSL/VDSL">
+
+|        Model         |     ADSL      |         VDSL          |       SVDSL       |  Nur über Provider |
+| :-----------------: | :-----------: | :-------------------: | :---------------: | :----------------: | 
+| FritzBox 7590       | ✅ | ✅ | ✅ |   |  
+| FritzBox 7590 AX    | ✅ | ✅ | ✅ |  |  
+| FritzBox 7690       | ✅ | ✅ | ✅ |  |
+| FritzBox 7530       | ✅ | ✅ | ✅ |  |
+| FritzBox 7520       | ✅ | ✅ | ❌ |  |
+| FritzBox 7490       | ✅ | ✅ | ❌ |  |
+
+</TabItem>
+<TabItem label="Kabel">
+
+|        Model         | DOCSIS | Geschwindigkeit | Verfügbarkeit |
+| :-----------------: | :----: | :-------------: | :-----------: |
+| FritzBox 6690       | 3.1    | bis 1 Gbit/s    | Vodafone Kabel |
+| FritzBox 6660       | 3.0    | bis 1 Gbit/s    | Vodafone Kabel |
+| FritzBox 6591       | 3.0    | bis 1 Gbit/s    | Vodafone Kabel |
+
+</TabItem>
+<TabItem label="Glasfaser">
+
+|        Model         | Anschluss | Geschwindigkeit | Verfügbarkeit |
+| :-----------------: | :-------: | :-------------: | :-----------: |
+| FritzBox 5590 Fiber | SFP+      | bis 1 Gbit/s    | Verschiedene Provider |
+| FritzBox 5530 Fiber | SFP       | bis 1 Gbit/s    | Verschiedene Provider |
+
+</TabItem>
+<TabItem label="Nur Router">
+
+|        Model         | WAN-Port | WiFi | Besonderheit |
+| :-----------------: | :------: | :--: | :----------: |
+| FritzBox 4060       | Gigabit  | WiFi 6 | Reiner Router |
+| FritzBox 4040       | Gigabit  | WiFi 5 | Reiner Router |
+
+</TabItem>
+</Tabs>
+
+## Verfügbarkeit
+
+- **Frei käuflich**: Alle Modelle im Handel erhältlich
+- **Bei Providern**: 
+  - Telekom: Über Hotline bestellbar
+  - 1&1: Als "Homeserver Edition" 
+  - O2: Ausgewählte Modelle
+  - Vodafone: Für Kabel und DSL

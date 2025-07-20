@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@adobe/remark-gridtables": "^3.0.14",
+    "@astrojs/cloudflare": "^12.6.0",
     "@astrojs/mdx": "^4.3.1",
     "@astrojs/node": "^9.3.0",
     "@astrojs/starlight": "^0.35.1",
@@ -22,7 +23,6 @@
     "remark-emoji": "^5.0.1",
     "remark-extended-table": "^2.0.3",
     "remark-gfm": "^4.0.1",
-    "starlight-auto-sidebar": "^0.1.2",
     "starlight-auto-sidebar": "^0.1.2",
     "starlight-heading-badges": "^0.5.0",
     "starlight-sidebar-topics": "^0.6.0",

@@ -1,12 +1,65 @@
 ---
-title: Übersicht
+title: Über das DSL.wiki
+description: Dokumentation zu Festnetz-Internet in Deutschland
 ---
-import { Aside } from "@astrojs/starlight/components";
 
-<Aside type="caution" title=" ">
-Status der Bereiche: <br/>
-<input type="checkbox" disabled /> :construction: Internet Provider <br/>
-<input type="checkbox" disabled /> :construction: Hardware<br/>
-<input type="checkbox" disabled /> Sonstiges
+import { Card, CardGrid } from "@astrojs/starlight/components";
 
-</Aside>
+## Inhalt
+
+Das DSL.wiki dokumentiert Festnetz-Internetanschlüsse in Deutschland. Die Dokumentation umfasst Anbieterinformationen, Tarife, Technologien und Hardware-Kompatibilität.
+
+## Was findest du hier?
+
+<CardGrid>
+  <Card title="Internetanbieter" icon="rocket">
+    Detaillierte Übersicht über **Telekom, Vodafone, O2** und weitere Anbieter mit aktuellen Tarifen und Technologien.
+    
+    [→ Zu den Anbietern](/anbieter/)
+  </Card>
+  
+  <Card title="Hardware" icon="setting">
+    Speedport, FritzBox, EasyBox - Routermodelle und Kompatibilitätsinformationen.
+    
+    [→ Hardware](/hardware/)
+  </Card>
+  
+  <Card title="Technologien" icon="information">
+    DSL, VDSL, Kabel, Glasfaser - Technische Grundlagen und Unterschiede.
+    
+    [→ Technologien verstehen](technologien)
+  </Card>
+  
+  <Card title="Glossar" icon="open-book">
+    Abkürzungen und Fachbegriffe - MVLZ, Resale, FTTH und weitere Begriffe.
+    
+    [→ Zum Glossar](glossar)
+  </Card>
+</CardGrid>
+
+## Abgedeckte Technologien
+
+- **DSL/VDSL** - Internetanschlüsse über Telefonleitungen
+- **Kabelinternet** - Internet über TV-Kabelnetz  
+- **Glasfaser (FTTH)** - Glasfaserverbindungen bis ins Gebäude
+- **Hybrid-Anschlüsse** - Kombinationen aus Festnetz und Mobilfunk
+
+## Nicht dokumentiert
+
+- **Reine Mobilfunktarife** (außer bei Hybrid-Technologien)
+- **Internationale Anbieter** (Fokus auf Deutschland)
+- **Business-Tarife** (Fokus auf Privatkunden)
+
+## Mitarbeit
+
+Verbesserungen über GitHub möglich:
+
+- Issues für Korrekturen
+- Pull Requests für Ergänzungen  
+- Diskussionen für größere Änderungen
+
+## Weitere Bereiche
+
+- [Technologien](technologien) - Technische Grundlagen
+- [Glossar](glossar) - Begriffserklärungen
+- [Verfügbarkeit](verfuegbarkeit) - Verfügbarkeitsprüfung

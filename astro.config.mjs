@@ -54,13 +54,13 @@ export default defineConfig({
           },
           {
             label: "Internetanbieter",
-            link: "/internetproviders/",
+            link: "/anbieter/",
             icon: "open-book",
             id: "learn2",
             items: [
               {
-                label: "Internetanbieter",
-                autogenerate: { directory: "internetproviders" },
+                label: "Anbieter",
+                autogenerate: { directory: "anbieter" },
               },
             ],
           },

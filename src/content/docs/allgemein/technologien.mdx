@@ -1,0 +1,150 @@
+---
+title: Internet-Technologien verstehen
+description: Unterschiede zwischen DSL, VDSL, Kabel, Glasfaser erklärt
+order: 2
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import { Aside } from "@astrojs/starlight/components";
+
+## Die verschiedenen Technologien
+
+<Tabs>
+<TabItem label="DSL/VDSL">
+
+### DSL (Digital Subscriber Line)
+
+**Übertragung:** Über vorhandene Telefonleitungen (Kupfer)
+
+#### ADSL (Asymmetric DSL)
+- **Geschwindigkeiten:** Bis ~16 Mbit/s Download, ~1 Mbit/s Upload
+- **Reichweite:** Bis ~6 km vom Verteiler
+- **Status:** Weitgehend durch VDSL ersetzt
+
+#### VDSL (Very High Speed DSL) 
+- **VDSL2:** Bis 100 Mbit/s Download, bis 40 Mbit/s Upload
+- **SuperVec:** Bis 250 Mbit/s Download, bis 40 Mbit/s Upload
+- **Reichweite:** Bis ~2 km vom Verteiler (deutlich kürzer als ADSL)
+
+#### Vorteile
+- ✅ Weit verbreitet (~95% Verfügbarkeit)
+- ✅ Über vorhandene Telefonleitungen
+- ✅ Bewährte Technologie
+
+#### Nachteile
+- ❌ Geschwindigkeit abhängig von Entfernung
+- ❌ Asymmetrisch (Upload deutlich langsamer)
+- ❌ Begrenzte Maximgeschwindigkeit
+
+</TabItem>
+
+<TabItem label="Kabel">
+
+### Kabelinternet (DOCSIS)
+
+**Übertragung:** Über TV-Kabelnetz (Koaxialkabel)
+
+#### DOCSIS-Versionen
+- **DOCSIS 3.0:** Bis 400 Mbit/s Download, bis 50 Mbit/s Upload
+- **DOCSIS 3.1:** Bis 1000 Mbit/s Download, bis 100 Mbit/s Upload
+
+#### Besonderheiten
+- **Shared Medium:** Bandbreite wird im Segment geteilt
+- **Asymmetrisch:** Download deutlich schneller als Upload
+- **Verfügbarkeit:** Nur wo Kabelnetz vorhanden
+
+#### Vorteile
+- ✅ Hohe Geschwindigkeiten möglich
+- ✅ Kein Vectoring-Problem wie bei DSL
+- ✅ Meist günstigere Gigabit-Tarife
+
+#### Nachteile
+- ❌ Geschwindigkeit schwankt je nach Auslastung
+- ❌ Upload weiterhin begrenzt
+- ❌ Nicht flächendeckend verfügbar
+
+</TabItem>
+
+<TabItem label="Glasfaser">
+
+### Glasfaser (Fiber)
+
+**Übertragung:** Über Lichtwellenleiter (Glasfaser)
+
+#### Ausbauarten
+- **FTTH (Fiber to the Home):** Glasfaser bis in die Wohnung
+- **FTTB (Fiber to the Building):** Glasfaser bis ins Gebäude
+- **FTTC (Fiber to the Curb/Cabinet):** Glasfaser bis zum Verteiler = VDSL
+
+#### Geschwindigkeiten
+- **Standard:** 100-1000 Mbit/s symmetrisch
+- **Ausbaufähig:** Bis zu 10 Gbit/s und mehr möglich
+- **Symmetrisch:** Upload = Download möglich
+
+#### Vorteile
+- ✅ Höchste Geschwindigkeiten
+- ✅ Symmetrische Übertragung möglich
+- ✅ Zukunftssicher und ausbaufähig
+- ✅ Stabile Latenz
+- ✅ Wetterunabhängig
+
+#### Nachteile
+- ❌ Noch nicht flächendeckend verfügbar
+- ❌ Installation kann aufwendig sein
+- ❌ Teilweise höhere Preise
+
+</TabItem>
+
+<TabItem label="Hybrid & Sonderformen">
+
+### Hybrid-Technologien
+
+#### Telekom Hybrid
+- **Kombination:** DSL/VDSL + LTE
+- **Funktionsweise:** LTE ergänzt DSL bei hohem Bedarf
+- **Vorteil:** Höhere effektive Geschwindigkeit
+- **Backup:** LTE als Ausfallsicherheit
+
+#### Andere Hybrid-Ansätze
+- **Bonding:** Mehrere DSL-Leitungen gebündelt
+- **5G Fixed Wireless:** 5G als DSL-Ersatz
+
+### Sonderformen
+
+#### Powerline (selten)
+- Internet über Stromleitung
+- Sehr regional begrenzt
+- Meist nur als Ergänzung
+
+#### Satellit (nicht im Fokus)
+- Für sehr abgelegene Gebiete
+- Hohe Latenz, begrenzte Datenvolumen
+
+</TabItem>
+</Tabs>
+
+## Technologie-Vergleich
+
+| Technologie | Max. Speed | Upload | Verfügbarkeit | Latenz | Zukunftsfähigkeit |
+|-------------|------------|--------|---------------|---------|-------------------|
+| **DSL/ADSL** | 16 Mbit/s | Sehr gering | Sehr hoch | Gut | ❌ |
+| **VDSL** | 250 Mbit/s | Begrenzt | Hoch | Gut | ⚠️ |
+| **Kabel** | 1000 Mbit/s | Begrenzt | Mittel | Variabel | ⚠️ |
+| **Glasfaser** | 1000+ Mbit/s | Symmetrisch | Steigend | Sehr gut | ✅ |
+| **Hybrid** | VDSL + LTE | Begrenzt | Wie VDSL | Gut | ⚠️ |
+
+## Was ist das Richtige für mich?
+
+<Aside type="tip" title="Entscheidungshilfe">
+**Glasfaser** wenn verfügbar - zukunftssicher und schnell
+**VDSL** für normale Nutzung - bewährt und verfügbar  
+**Kabel** für hohe Downloads - günstige Gigabit-Option
+**Hybrid** bei langsamem DSL - Geschwindigkeits-Boost
+</Aside>
+
+### Prüfung der Verfügbarkeit
+1. [Telekom Verfügbarkeitsprüfung](https://www.telekom.de/netz/verfuegbarkeit) für DSL/VDSL/Glasfaser
+2. [Vodafone Verfügbarkeitsprüfung](https://www.vodafone.de/verfuegbarkeit) für Kabel/DSL/Glasfaser  
+3. Lokale Anbieter für regionale Glasfaser-Netze
+
+[→ Mehr zur Verfügbarkeitsprüfung](verfuegbarkeit)
