@@ -23,6 +23,7 @@
     "remark-extended-table": "^2.0.3",
     "remark-gfm": "^4.0.1",
     "starlight-auto-sidebar": "^0.1.2",
+    "starlight-auto-sidebar": "^0.1.2",
     "starlight-heading-badges": "^0.5.0",
     "starlight-sidebar-topics": "^0.6.0",
     "starlight-sidebar-topics-dropdown": "^0.5.1",
