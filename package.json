@@ -14,7 +14,7 @@
     "@adobe/remark-gridtables": "^3.0.14",
     "@astrojs/cloudflare": "^12.6.1",
     "@astrojs/mdx": "^4.3.2",
-    "@astrojs/node": "^9.3.2",
+    "@astrojs/node": "^9.4.0",
     "@astrojs/starlight": "^0.35.2",
     "@tailwindcss/vite": "^4.1.11",
     "@yeskunall/astro-umami": "^0.0.5",
