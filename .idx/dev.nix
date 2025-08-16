@@ -12,8 +12,7 @@
     # pkgs.go
     # pkgs.python311
     # pkgs.python311Packages.pip
-    pkgs.nodejs_24
-    # pkgs.nodePackages.nodemon
+    pkgs.nodejs_latest
   ];
 
   # Sets environment variables in the workspace
@@ -49,7 +48,8 @@
       # Runs when a workspace is first created
       onCreate = {
         # Example: install JS dependencies from NPM
-        # npm-install = "npm install";
+       # pnpm-update ="pnpm add -g pnpm";
+        npm-install = "pnpm install";
       };
       # Runs when the workspace is (re)started
       onStart = {
