@@ -6,6 +6,7 @@ order: 1
 
 import { Tabs, TabItem } from "@astrojs/starlight/components";
 import { Aside } from "@astrojs/starlight/components";
+import { Badge } from "@astrojs/starlight/components";
 
 ## Verfügbare Technologie
 
@@ -16,24 +17,26 @@ import { Aside } from "@astrojs/starlight/components";
 [^1]: Nur in einzelnen Gebieten verfügbar über den Mietershop der Telekom.
 
 ## Tarife
+
 <Tabs>
 <TabItem label="DSL inkl. Hybrid">
 <p id="anchor"> </p>
 
-| Name                     | MVLZ |       Hybrid       |
-| :----------------------- | :--: | :----------------: |
-| MagentaZuhause Start     | 24M  |        :x:         |
-| MagentaZuhause XS        | 12M  |        :x:         |
-| MagentaZuhause S         | 24M  |        :x:         |
-| MagentaZuhause M         | 24M  |        :x:         |
-| MagentaZuhause M Hybrid  | 24M  | :white_check_mark: |
-| MagentaZuhause M Flex    |  1M  |        :x:         |
-| MagentaZuhause L         | 24M  |        :x:         |
-| MagentaZuhause L Hybrid  | 24M  | :white_check_mark: |
-| MagentaZuhause L Flex    |  1M  |        :x:         |
-| MagentaZuhause XL        | 24M  |        :x:         |
-| MagentaZuhause XL Hybrid | 24M  | :white_check_mark: |
-| MagentaZuhause XL Flex   |  1M  |        :x:         |
+| Name                                                          | MVLZ | Geschwindigkeit (Mbit) |       Hybrid       |
+| :------------------------------------------------------------ | :--: | :--------------------: | :----------------: |
+| MagentaZuhause Start                                          | 24M  |           16           |        :x:         |
+| MagentaZuhause XS                                             | 12M  |           16           |        :x:         |
+| MagentaZuhause S                                              | 24M  |           16           |        :x:         |
+| MagentaZuhause M                                              | 24M  |           50           |        :x:         |
+| MagentaZuhause M Hybrid                                       | 24M  |           50           | :white_check_mark: |
+| MagentaZuhause M Flex                                         |  1M  |           50           |        :x:         |
+| MagentaZuhause L                                              | 24M  |          100           |        :x:         |
+| MagentaZuhause L Hybrid                                       | 12M  |          100           | :white_check_mark: |
+| MagentaZuhause L Flex                                         | 12M  |          100           |        :x:         |
+| MagentaZuhause XL                                             | 24M  |          250           |        :x:         |
+| MagentaZuhause XL Hybrid                                      | 12M  |          250           | :white_check_mark: |
+| MagentaZuhause XL Flex                                        |  1M  |          250           |        :x:         |
+| MagentaZuhause XXL Hybrid <Badge text="Neu" variant="note" /> |  1M  |          500           | :white_check_mark: |
 
 <details>
 <summary>Archiv</summary>
