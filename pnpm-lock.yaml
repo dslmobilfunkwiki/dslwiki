@@ -27,8 +27,8 @@ importers:
         specifier: ^4.1.17
         version: 4.1.17(vite@6.4.1(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.1))
       '@yeskunall/astro-umami':
-        specifier: ^0.0.6
-        version: 0.0.6(astro@5.15.8(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.2)(typescript@5.8.3)(yaml@2.8.1))
+        specifier: ^0.0.7
+        version: 0.0.7(astro@5.15.8(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.2)(typescript@5.8.3)(yaml@2.8.1))
       astro:
         specifier: ^5.15.8
         version: 5.15.8(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.2)(typescript@5.8.3)(yaml@2.8.1)
@@ -1183,8 +1183,8 @@ packages:
   '@vtbag/utensil-drawer@1.2.13':
     resolution: {integrity: sha512-DXTxfqTAebGyZpiZ1vDs9IvXMYx/++GnjQNJzPWfuZsvoz4N9tSbGrUCaRQ3bd9PLZ6qGF978SNQFyfFBhah/g==}
 
-  '@yeskunall/astro-umami@0.0.6':
-    resolution: {integrity: sha512-fEp4jwi33CKRGJcAQSoCv61OGwBqYgmxkyVHFPdb4X7H2SOMVSH/u/6u3cfPrYMHVxw8j5NCz+LAqprxaAc1Xw==}
+  '@yeskunall/astro-umami@0.0.7':
+    resolution: {integrity: sha512-8W/At28qKyPGepwvVumgJX0VZ0F9KK4M4zNDQfUZ3iBJpAKUTAkdIXM7i7I+PFsP7rXOo/AVgcDXDOv9L03QhQ==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0 || ^5.0.0
 
@@ -3697,7 +3697,7 @@ snapshots:
 
   '@vtbag/utensil-drawer@1.2.13': {}
 
-  '@yeskunall/astro-umami@0.0.6(astro@5.15.8(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.2)(typescript@5.8.3)(yaml@2.8.1))':
+  '@yeskunall/astro-umami@0.0.7(astro@5.15.8(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.2)(typescript@5.8.3)(yaml@2.8.1))':
     dependencies:
       astro: 5.15.8(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.2)(typescript@5.8.3)(yaml@2.8.1)
 
