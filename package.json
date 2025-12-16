@@ -11,15 +11,15 @@
     "deploy": "pnpm run build && wrangler deploy"
   },
   "dependencies": {
-    "@adobe/remark-gridtables": "^3.0.15",
-    "@astrojs/cloudflare": "^12.6.10",
-    "@astrojs/mdx": "^4.3.10",
-    "@astrojs/node": "^9.5.0",
-    "@astrojs/starlight": "^0.35.3",
-    "@tailwindcss/vite": "^4.1.17",
-    "@yeskunall/astro-umami": "^0.0.6",
-    "astro": "^5.15.8",
-    "daisyui": "^5.5.0",
+    "@adobe/remark-gridtables": "^3.0.16",
+    "@astrojs/cloudflare": "^12.6.12",
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/node": "^9.5.1",
+    "@astrojs/starlight": "^0.37.1",
+    "@tailwindcss/vite": "^4.1.18",
+    "@yeskunall/astro-umami": "^0.0.7",
+    "astro": "^5.16.5",
+    "daisyui": "^5.5.14",
     "remark-emoji": "^5.0.2",
     "remark-extended-table": "^2.0.3",
     "remark-gfm": "^4.0.1",
@@ -28,8 +28,8 @@
     "starlight-sidebar-topics": "^0.6.2",
     "starlight-sidebar-topics-dropdown": "^0.5.2",
     "starlight-versions": "^0.5.6",
-    "tailwindcss": "^4.1.17",
-    "wrangler": "^4.47.0"
+    "tailwindcss": "^4.1.18",
+    "wrangler": "^4.54.0"
   },
   "packageManager": "pnpm@10.2.1+sha512.398035c7bd696d0ba0b10a688ed558285329d27ea994804a52bad9167d8e3a72bcb993f9699585d3ca25779ac64949ef422757a6c31102c12ab932e5cbe5cc92",
   "pnpm": {
