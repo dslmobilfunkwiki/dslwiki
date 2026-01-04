@@ -97,7 +97,7 @@ export default defineConfig({
 
       // Markdown `remarkPlugins` ignored,
       // only `remarkPlugin2` applied.
-      remarkPlugins: [emoji, remarkExtendedTable],
+      remarkPlugins: [emoji, [remarkExtendedTable, {tableCellPadding : false}]],
       // `gfm` overridden to `true`
       gfm: true,
       remarkRehype: {
