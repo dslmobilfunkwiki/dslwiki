@@ -15,7 +15,7 @@
     "@astrojs/cloudflare": "^12.6.12",
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/node": "^9.5.1",
-    "@astrojs/starlight": "^0.37.1",
+    "@astrojs/starlight": "^0.37.3",
     "@tailwindcss/vite": "^4.1.18",
     "@yeskunall/astro-umami": "^0.0.7",
     "astro": "^5.16.6",
