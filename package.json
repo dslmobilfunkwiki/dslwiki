@@ -11,14 +11,14 @@
     "deploy": "pnpm run build && wrangler deploy"
   },
   "dependencies": {
-    "@adobe/remark-gridtables": "^3.0.16",
+    "@adobe/remark-gridtables": "^3.0.17",
     "@astrojs/cloudflare": "^12.6.12",
     "@astrojs/mdx": "^4.3.13",
-    "@astrojs/node": "^9.5.1",
-    "@astrojs/starlight": "^0.37.1",
+    "@astrojs/node": "^9.5.2",
+    "@astrojs/starlight": "^0.37.4",
     "@tailwindcss/vite": "^4.1.18",
     "@yeskunall/astro-umami": "^0.0.7",
-    "astro": "^5.16.6",
+    "astro": "^5.16.15",
     "daisyui": "^5.5.14",
     "remark-emoji": "^5.0.2",
     "remark-extended-table": "^2.0.3",
@@ -29,14 +29,14 @@
     "starlight-sidebar-topics-dropdown": "^0.5.2",
     "starlight-versions": "^0.5.6",
     "tailwindcss": "^4.1.18",
-    "wrangler": "^4.56.0"
+    "wrangler": "^4.60.0"
   },
   "packageManager": "pnpm@10.26.0+sha512.3b3f6c725ebe712506c0ab1ad4133cf86b1f4b687effce62a9b38b4d72e3954242e643190fc51fa1642949c735f403debd44f5cb0edd657abe63a8b6a7e1e402",
   "pnpm": {
     "neverBuiltDependencies": []
   },
   "devDependencies": {
-    "astro-vtbot": "^2.1.9",
+    "astro-vtbot": "^2.1.10",
     "sharp": "^0.34.5"
   }
 }
