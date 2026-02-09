@@ -36,7 +36,7 @@
     "neverBuiltDependencies": []
   },
   "devDependencies": {
-    "astro-vtbot": "^2.1.10",
+    "astro-vtbot": "^2.1.11",
     "sharp": "^0.34.5"
   }
 }
