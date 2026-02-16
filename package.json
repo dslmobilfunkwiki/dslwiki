@@ -14,12 +14,12 @@
     "@adobe/remark-gridtables": "^3.0.17",
     "@astrojs/cloudflare": "^12.6.12",
     "@astrojs/mdx": "^4.3.13",
-    "@astrojs/node": "^9.5.2",
-    "@astrojs/starlight": "^0.37.4",
+    "@astrojs/node": "^9.5.3",
+    "@astrojs/starlight": "^0.37.6",
     "@tailwindcss/vite": "^4.1.18",
     "@yeskunall/astro-umami": "^0.0.7",
-    "astro": "^5.17.1",
-    "daisyui": "^5.5.14",
+    "astro": "^5.17.2",
+    "daisyui": "^5.5.18",
     "remark-emoji": "^5.0.2",
     "remark-extended-table": "^2.0.3",
     "remark-gfm": "^4.0.1",
@@ -29,14 +29,15 @@
     "starlight-sidebar-topics-dropdown": "^0.5.2",
     "starlight-versions": "^0.5.6",
     "tailwindcss": "^4.1.18",
-    "wrangler": "^4.61.1"
+    "wrangler": "^4.65.0"
   },
   "packageManager": "pnpm@10.26.0+sha512.3b3f6c725ebe712506c0ab1ad4133cf86b1f4b687effce62a9b38b4d72e3954242e643190fc51fa1642949c735f403debd44f5cb0edd657abe63a8b6a7e1e402",
   "pnpm": {
     "neverBuiltDependencies": []
   },
   "devDependencies": {
-    "astro-vtbot": "^2.1.10",
+    "astro-vtbot": "^2.1.11",
+    "lodash": "^4.17.23",
     "sharp": "^0.34.5"
   }
 }
