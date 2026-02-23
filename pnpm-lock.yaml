@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@adobe/remark-gridtables':
-        specifier: ^3.0.17
-        version: 3.0.17
+        specifier: ^3.0.18
+        version: 3.0.18
       '@astrojs/cloudflare':
         specifier: ^12.6.12
         version: 12.6.12(@types/node@25.0.3)(astro@5.17.2(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.57.1)(typescript@5.8.3)(yaml@2.8.2))(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2)
@@ -78,14 +78,14 @@ importers:
 
 packages:
 
-  '@adobe/mdast-util-gridtables@4.0.16':
-    resolution: {integrity: sha512-bVWXOf/BQMqFJcTahrDOV/ZCatp1eC7RMx7ZXBIW1pg7Z83TOrZQpH7tI3qvb/WfiB3kXxFSEMxPloKOw7GFXg==}
+  '@adobe/mdast-util-gridtables@4.0.17':
+    resolution: {integrity: sha512-BK9BiGFBt5EVWY2FaUyRU+tHqXRCc+FGehVqtH3sizLw2yx4uNxMI4l566qHIA3vH6866bI9GYIhXw2BYQ/FZw==}
 
   '@adobe/micromark-extension-gridtables@2.0.4':
     resolution: {integrity: sha512-mzyRI2d0StuUv75VFnffYsHXRUo8J9RlK1EvjfmgHahwda1gNwe1Fqh4AYEZSWChf1HD/QBRcL6hEnxj9hedMg==}
 
-  '@adobe/remark-gridtables@3.0.17':
-    resolution: {integrity: sha512-n2AfXu7UeP9oLCKMaanQSjgtI4ZZobf6a1Bc++HoQVyVGjTCCoXDLuLNVyrxSmd1V1XlNhzktSEnI9aiWPacPA==}
+  '@adobe/remark-gridtables@3.0.18':
+    resolution: {integrity: sha512-dw0v2HJyZKOcOn4KUb8mkHkceG1OVE1q26bYycKzYN/wPnBjneysxD0wR4tJ0O1aPFUX9p7wTpf3xl6ZkiJWXA==}
 
   '@astrojs/cloudflare@12.6.12':
     resolution: {integrity: sha512-f6iXreyJc02EhokqsoPf7D/s3tebyZ8dBNVOyY2JDY87ujft4RokVS1f+zNwNFyu0wkehC4ALUboU5z590DE4w==}
@@ -2048,6 +2048,9 @@ packages:
   mdast-util-from-markdown@2.0.2:
     resolution: {integrity: sha512-uZhTV/8NBuw0WHkPTrCqDOl0zVe1BIng5ZtHoDk49ME1qqcjYmmLmOf0gELgcRMxN4w2iuIeVso5/6QymSrgmA==}
 
+  mdast-util-from-markdown@2.0.3:
+    resolution: {integrity: sha512-W4mAWTvSlKvf8L6J+VN9yLSqQ9AOAAvHuoDAmPkz4dHf553m5gVj2ejadHJhoJmcmxEnOv6Pa8XJhpxE93kb8Q==}
+
   mdast-util-frontmatter@2.0.1:
     resolution: {integrity: sha512-LRqI9+wdgC25P0URIJY9vwocIzCcksduHQ9OF2joxQoyTNVduwLAFUzjoopuRJbJAReaKrNQKAZKL3uCMugWJA==}
 
@@ -2964,10 +2967,10 @@ packages:
 
 snapshots:
 
-  '@adobe/mdast-util-gridtables@4.0.16':
+  '@adobe/mdast-util-gridtables@4.0.17':
     dependencies:
       '@adobe/micromark-extension-gridtables': 2.0.4
-      mdast-util-from-markdown: 2.0.2
+      mdast-util-from-markdown: 2.0.3
       mdast-util-to-hast: 13.2.1
       mdast-util-to-markdown: 2.1.2
       unist-util-visit: 5.1.0
@@ -2982,9 +2985,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@adobe/remark-gridtables@3.0.17':
+  '@adobe/remark-gridtables@3.0.18':
     dependencies:
-      '@adobe/mdast-util-gridtables': 4.0.16
+      '@adobe/mdast-util-gridtables': 4.0.17
       '@adobe/micromark-extension-gridtables': 2.0.4
     transitivePeerDependencies:
       - supports-color
@@ -4905,12 +4908,29 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  mdast-util-from-markdown@2.0.3:
+    dependencies:
+      '@types/mdast': 4.0.4
+      '@types/unist': 3.0.3
+      decode-named-character-reference: 1.3.0
+      devlop: 1.1.0
+      mdast-util-to-string: 4.0.0
+      micromark: 4.0.2
+      micromark-util-decode-numeric-character-reference: 2.0.2
+      micromark-util-decode-string: 2.0.1
+      micromark-util-normalize-identifier: 2.0.1
+      micromark-util-symbol: 2.0.1
+      micromark-util-types: 2.0.2
+      unist-util-stringify-position: 4.0.0
+    transitivePeerDependencies:
+      - supports-color
+
   mdast-util-frontmatter@2.0.1:
     dependencies:
       '@types/mdast': 4.0.4
       devlop: 1.1.0
       escape-string-regexp: 5.0.0
-      mdast-util-from-markdown: 2.0.2
+      mdast-util-from-markdown: 2.0.3
       mdast-util-to-markdown: 2.1.2
       micromark-extension-frontmatter: 2.0.0
     transitivePeerDependencies:
@@ -4928,7 +4948,7 @@ snapshots:
     dependencies:
       '@types/mdast': 4.0.4
       devlop: 1.1.0
-      mdast-util-from-markdown: 2.0.2
+      mdast-util-from-markdown: 2.0.3
       mdast-util-to-markdown: 2.1.2
       micromark-util-normalize-identifier: 2.0.1
     transitivePeerDependencies:
@@ -4937,7 +4957,7 @@ snapshots:
   mdast-util-gfm-strikethrough@2.0.0:
     dependencies:
       '@types/mdast': 4.0.4
-      mdast-util-from-markdown: 2.0.2
+      mdast-util-from-markdown: 2.0.3
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
@@ -4947,7 +4967,7 @@ snapshots:
       '@types/mdast': 4.0.4
       devlop: 1.1.0
       markdown-table: 3.0.4
-      mdast-util-from-markdown: 2.0.2
+      mdast-util-from-markdown: 2.0.3
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
@@ -4956,7 +4976,7 @@ snapshots:
     dependencies:
       '@types/mdast': 4.0.4
       devlop: 1.1.0
-      mdast-util-from-markdown: 2.0.2
+      mdast-util-from-markdown: 2.0.3
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
@@ -4979,7 +4999,7 @@ snapshots:
       '@types/hast': 3.0.4
       '@types/mdast': 4.0.4
       devlop: 1.1.0
-      mdast-util-from-markdown: 2.0.2
+      mdast-util-from-markdown: 2.0.3
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
@@ -5003,7 +5023,7 @@ snapshots:
 
   mdast-util-mdx@3.0.0:
     dependencies:
-      mdast-util-from-markdown: 2.0.2
+      mdast-util-from-markdown: 2.0.3
       mdast-util-mdx-expression: 2.0.1
       mdast-util-mdx-jsx: 3.2.0
       mdast-util-mdxjs-esm: 2.0.1
