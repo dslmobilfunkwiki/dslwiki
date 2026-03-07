@@ -26,9 +26,8 @@ import { Aside } from "@astrojs/starlight/components";
 
 |          DSL           |     Glasfaser      |       Kabel        |
 | :--------------------: | :----------------: | :----------------: |
-| :white_check_mark:[^1] | :white_check_mark: | :white_check_mark: |
+| :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-[^1]: DSL/VDSL über Telekom-Netz (Resale)
 
 ## Tarife
 
@@ -41,20 +40,35 @@ import { Aside } from "@astrojs/starlight/components";
 
 | Name                         | MVLZ | Geschwindigkeit | Besonderheit                    |
 | :--------------------------- | :--: | :-------------- | :------------------------------ |
-| Red Internet & Phone DSL 16  | 24M  | 16 Mbit/s       | DSL über Telekom-Netz           |
-| Red Internet & Phone DSL 50  | 24M  | 50 Mbit/s       | VDSL über Telekom-Netz          |
-| Red Internet & Phone DSL 100 | 24M  | 100 Mbit/s      | VDSL über Telekom-Netz          |
-| Red Internet & Phone DSL 250 | 24M  | 250 Mbit/s      | SuperVec-VDSL über Telekom-Netz |
+| GigaZuhause 16 DSL | 24M  | 16 Mbit/s       |           |
+| GigaZuhause  50 DSL | 24M  | 50 Mbit/s       |          |
+| GigaZuhause 100 DSL | 24M  | 100 Mbit/s      |          |
+| GigaZuhause 250 DSL | 24M  | 250 Mbit/s      | |
 
 <details>
   <summary>Archiv</summary>
-  Name | MVLZ | Geschwindigkeit | Besonderheit | ------------ | :-----------: | :-----------:
-  | :-----------: | | | | |
+| Name                            | MVLZ | Geschwindigkeit | DOCSIS |
+| :------------------------------ | :--: | :-------------- | :----: |
+| Red Internet & Phone DSL 16  | 24M  | 16 Mbit/s       |           |
+| Red Internet & Phone DSL 50  | 24M  | 50 Mbit/s       |          |
+| Red Internet & Phone DSL 100 | 24M  | 100 Mbit/s      |          |
+| Red Internet & Phone DSL 250 | 24M  | 250 Mbit/s      | |
 </details>
 
 </TabItem>
 <TabItem label="Kabel">
 
+| Name                            | MVLZ | Geschwindigkeit | DOCSIS |
+| :------------------------------ | :--: | :-------------- | :----: |
+| GigaZuhause 50   | 24M  | 50 Mbit/s       |  3.0   |
+| GigaZuhause 150  | 24M  | 150 Mbit/s      |  3.0   |
+| GigaZuhause 300  | 24M  | 300 Mbit/s      |  3.0   |
+| GigaZuhause 600  | 24M  | 600 Mbit/s      |  3.1   |
+| GigaZuhause 800  | 24M  | 800 Mbit/s      |  3.1   |
+| GigaZuhause 1000 / CableMax 1000  | 24M  | 1000 Mbit/s     |  3.1   |
+
+<details>
+  <summary>Archiv</summary>
 | Name                            | MVLZ | Geschwindigkeit | DOCSIS |
 | :------------------------------ | :--: | :-------------- | :----: |
 | Red Internet & Phone Cable 50   | 24M  | 50 Mbit/s       |  3.0   |
@@ -63,10 +77,6 @@ import { Aside } from "@astrojs/starlight/components";
 | Red Internet & Phone Cable 500  | 24M  | 500 Mbit/s      |  3.1   |
 | Red Internet & Phone Cable 1000 | 24M  | 1000 Mbit/s     |  3.1   |
 
-<details>
-  <summary>Archiv</summary>
-  Name | MVLZ | Geschwindigkeit | DOCSIS | ------------ | :-----------: | :-----------:
-  | :-----------: | | | | |
 </details>
 
 </TabItem>
@@ -74,14 +84,18 @@ import { Aside } from "@astrojs/starlight/components";
 
 | Name                            | MVLZ | Geschwindigkeit | Besonderheit |
 | :------------------------------ | :--: | :-------------- | :----------- |
-| Red Internet & Phone Fiber 100  | 24M  | 100 Mbit/s      | Symmetrisch  |
-| Red Internet & Phone Fiber 500  | 24M  | 500 Mbit/s      | Symmetrisch  |
-| Red Internet & Phone Fiber 1000 | 24M  | 1000 Mbit/s     | Symmetrisch  |
+| GigaZuhause 150 Glasfaser  | 24M  | 150 Mbit/s      | Symmetrisch  |
+| GigaZuhause 300 Glasfaser  | 24M  | 300 Mbit/s      | Symmetrisch  |
+| GigaZuhause 600 Glasfaser  | 24M  | 600 Mbit/s      | Symmetrisch  |
+| GigaZuhause 1000 Glasfaser | 24M  | 1000 Mbit/s     | Symmetrisch  |
 
 <details>
   <summary>Archiv</summary>
-  Name | MVLZ | Geschwindigkeit | Besonderheit | ------------ | :-----------: | :-----------:
-  | :-----------: | | | | |
+| Name                            | MVLZ | Geschwindigkeit | Besonderheit |
+| :------------------------------ | :--: | :-------------- | :----------- |
+| Red Internet & Phone Fiber 100  | 24M  | 100 Mbit/s      | Symmetrisch  |
+| Red Internet & Phone Fiber 500  | 24M  | 500 Mbit/s      | Symmetrisch  |
+| Red Internet & Phone Fiber 1000 | 24M  | 1000 Mbit/s     | Symmetrisch  |
 </details>
 
 </TabItem>
