@@ -11,6 +11,8 @@ importers:
       '@adobe/remark-gridtables':
         specifier: ^3.0.18
         version: 3.0.18
+        specifier: ^3.0.18
+        version: 3.0.18
       '@astrojs/cloudflare':
         specifier: ^13.1.3
         version: 13.1.3(@types/node@24.12.0)(astro@6.0.8(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.59.1)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(workerd@1.20260317.1)(wrangler@4.76.0)(yaml@2.8.3)
@@ -27,6 +29,8 @@ importers:
         specifier: ^6.0.1
         version: 6.0.8(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.59.1)(yaml@2.8.3)
       daisyui:
+        specifier: ^5.5.19
+        version: 5.5.19
         specifier: ^5.5.19
         version: 5.5.19
       remark-emoji:
@@ -71,10 +75,14 @@ packages:
 
   '@adobe/mdast-util-gridtables@4.0.17':
     resolution: {integrity: sha512-BK9BiGFBt5EVWY2FaUyRU+tHqXRCc+FGehVqtH3sizLw2yx4uNxMI4l566qHIA3vH6866bI9GYIhXw2BYQ/FZw==}
+  '@adobe/mdast-util-gridtables@4.0.17':
+    resolution: {integrity: sha512-BK9BiGFBt5EVWY2FaUyRU+tHqXRCc+FGehVqtH3sizLw2yx4uNxMI4l566qHIA3vH6866bI9GYIhXw2BYQ/FZw==}
 
   '@adobe/micromark-extension-gridtables@2.0.4':
     resolution: {integrity: sha512-mzyRI2d0StuUv75VFnffYsHXRUo8J9RlK1EvjfmgHahwda1gNwe1Fqh4AYEZSWChf1HD/QBRcL6hEnxj9hedMg==}
 
+  '@adobe/remark-gridtables@3.0.18':
+    resolution: {integrity: sha512-dw0v2HJyZKOcOn4KUb8mkHkceG1OVE1q26bYycKzYN/wPnBjneysxD0wR4tJ0O1aPFUX9p7wTpf3xl6ZkiJWXA==}
   '@adobe/remark-gridtables@3.0.18':
     resolution: {integrity: sha512-dw0v2HJyZKOcOn4KUb8mkHkceG1OVE1q26bYycKzYN/wPnBjneysxD0wR4tJ0O1aPFUX9p7wTpf3xl6ZkiJWXA==}
 
@@ -163,6 +171,7 @@ packages:
     resolution: {integrity: sha512-8ovsRpwzPoEqPUzoErAYVv8l3FMZNeBVQfJTvtzP4AgLSRGZISRfuChFxHWUQd3n6cnrwkuTGxT+2cGo8EsyYg==}
     peerDependencies:
       unenv: 2.0.0-rc.24
+      workerd: 1.20260301.1 || ~1.20260302.1 || ~1.20260303.1 || ~1.20260304.1 || >1.20260305.0 <2.0.0-0
       workerd: 1.20260301.1 || ~1.20260302.1 || ~1.20260303.1 || ~1.20260304.1 || >1.20260305.0 <2.0.0-0
     peerDependenciesMeta:
       workerd:
@@ -529,16 +538,26 @@ packages:
 
   '@expressive-code/core@0.41.7':
     resolution: {integrity: sha512-ck92uZYZ9Wba2zxkiZLsZGi9N54pMSAVdrI9uW3Oo9AtLglD5RmrdTwbYPCT2S/jC36JGB2i+pnQtBm/Ib2+dg==}
+  '@expressive-code/core@0.41.7':
+    resolution: {integrity: sha512-ck92uZYZ9Wba2zxkiZLsZGi9N54pMSAVdrI9uW3Oo9AtLglD5RmrdTwbYPCT2S/jC36JGB2i+pnQtBm/Ib2+dg==}
 
+  '@expressive-code/plugin-frames@0.41.7':
+    resolution: {integrity: sha512-diKtxjQw/979cTglRFaMCY/sR6hWF0kSMg8jsKLXaZBSfGS0I/Hoe7Qds3vVEgeoW+GHHQzMcwvgx/MOIXhrTA==}
   '@expressive-code/plugin-frames@0.41.7':
     resolution: {integrity: sha512-diKtxjQw/979cTglRFaMCY/sR6hWF0kSMg8jsKLXaZBSfGS0I/Hoe7Qds3vVEgeoW+GHHQzMcwvgx/MOIXhrTA==}
 
   '@expressive-code/plugin-shiki@0.41.7':
     resolution: {integrity: sha512-DL605bLrUOgqTdZ0Ot5MlTaWzppRkzzqzeGEu7ODnHF39IkEBbFdsC7pbl3LbUQ1DFtnfx6rD54k/cdofbW6KQ==}
+  '@expressive-code/plugin-shiki@0.41.7':
+    resolution: {integrity: sha512-DL605bLrUOgqTdZ0Ot5MlTaWzppRkzzqzeGEu7ODnHF39IkEBbFdsC7pbl3LbUQ1DFtnfx6rD54k/cdofbW6KQ==}
 
   '@expressive-code/plugin-text-markers@0.41.7':
     resolution: {integrity: sha512-Ewpwuc5t6eFdZmWlFyeuy3e1PTQC0jFvw2Q+2bpcWXbOZhPLsT7+h8lsSIJxb5mS7wZko7cKyQ2RLYDyK6Fpmw==}
+  '@expressive-code/plugin-text-markers@0.41.7':
+    resolution: {integrity: sha512-Ewpwuc5t6eFdZmWlFyeuy3e1PTQC0jFvw2Q+2bpcWXbOZhPLsT7+h8lsSIJxb5mS7wZko7cKyQ2RLYDyK6Fpmw==}
 
+  '@img/colour@1.1.0':
+    resolution: {integrity: sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==}
   '@img/colour@1.1.0':
     resolution: {integrity: sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==}
     engines: {node: '>=18'}
@@ -1150,6 +1169,8 @@ packages:
 
   astro-expressive-code@0.41.7:
     resolution: {integrity: sha512-hUpogGc6DdAd+I7pPXsctyYPRBJDK7Q7d06s4cyP0Vz3OcbziP3FNzN0jZci1BpCvLn9675DvS7B9ctKKX64JQ==}
+  astro-expressive-code@0.41.7:
+    resolution: {integrity: sha512-hUpogGc6DdAd+I7pPXsctyYPRBJDK7Q7d06s4cyP0Vz3OcbziP3FNzN0jZci1BpCvLn9675DvS7B9ctKKX64JQ==}
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0 || ^6.0.0-beta
 
@@ -1247,6 +1268,8 @@ packages:
 
   css-tree@3.2.1:
     resolution: {integrity: sha512-X7sjQzceUhu1u7Y/ylrRZFU2FS6LRiFVp6rKLPg23y3x3c3DOKAwuXGDp+PAGjh6CSnCjYeAul8pcT8bAl+lSA==}
+  css-tree@3.2.1:
+    resolution: {integrity: sha512-X7sjQzceUhu1u7Y/ylrRZFU2FS6LRiFVp6rKLPg23y3x3c3DOKAwuXGDp+PAGjh6CSnCjYeAul8pcT8bAl+lSA==}
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0}
 
   css-what@6.2.2:
@@ -1262,6 +1285,8 @@ packages:
     resolution: {integrity: sha512-0LrrStPOdJj+SPCCrGhzryycLjwcgUSHBtxNA8aIDxf0GLsRh1cKYhB00Gd1lDOS4yGH69+SNn13+TWbVHETFQ==}
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0, npm: '>=7.0.0'}
 
+  daisyui@5.5.19:
+    resolution: {integrity: sha512-pbFAkl1VCEh/MPCeclKL61I/MqRIFFhNU7yiXoDDRapXN4/qNCoMxeCCswyxEEhqL5eiTTfwHvucFtOE71C9sA==}
   daisyui@5.5.19:
     resolution: {integrity: sha512-pbFAkl1VCEh/MPCeclKL61I/MqRIFFhNU7yiXoDDRapXN4/qNCoMxeCCswyxEEhqL5eiTTfwHvucFtOE71C9sA==}
 
@@ -1421,6 +1446,8 @@ packages:
   fontace@0.4.1:
     resolution: {integrity: sha512-lDMvbAzSnHmbYMTEld5qdtvNH2/pWpICOqpean9IgC7vUbUJc3k+k5Dokp85CegamqQpFbXf0rAVkbzpyTA8aw==}
 
+  fontkitten@1.0.3:
+    resolution: {integrity: sha512-Wp1zXWPVUPBmfoa3Cqc9ctaKuzKAV6uLstRqlR56kSjplf5uAce+qeyYym7F+PHbGTk+tCEdkCW6RD7DX/gBZw==}
   fontkitten@1.0.3:
     resolution: {integrity: sha512-Wp1zXWPVUPBmfoa3Cqc9ctaKuzKAV6uLstRqlR56kSjplf5uAce+qeyYym7F+PHbGTk+tCEdkCW6RD7DX/gBZw==}
     engines: {node: '>=20'}
@@ -1680,6 +1707,8 @@ packages:
 
   mdast-util-from-markdown@2.0.3:
     resolution: {integrity: sha512-W4mAWTvSlKvf8L6J+VN9yLSqQ9AOAAvHuoDAmPkz4dHf553m5gVj2ejadHJhoJmcmxEnOv6Pa8XJhpxE93kb8Q==}
+  mdast-util-from-markdown@2.0.3:
+    resolution: {integrity: sha512-W4mAWTvSlKvf8L6J+VN9yLSqQ9AOAAvHuoDAmPkz4dHf553m5gVj2ejadHJhoJmcmxEnOv6Pa8XJhpxE93kb8Q==}
 
   mdast-util-frontmatter@2.0.1:
     resolution: {integrity: sha512-LRqI9+wdgC25P0URIJY9vwocIzCcksduHQ9OF2joxQoyTNVduwLAFUzjoopuRJbJAReaKrNQKAZKL3uCMugWJA==}
@@ -1729,6 +1758,8 @@ packages:
   mdn-data@2.0.28:
     resolution: {integrity: sha512-aylIc7Z9y4yzHYAJNuESG3hfhC+0Ibp/MAMiaOZgNv4pmEdFyfZhhhny4MNiAfWdBQ1RQ2mfDWmM1x8SvGyp8g==}
 
+  mdn-data@2.27.1:
+    resolution: {integrity: sha512-9Yubnt3e8A0OKwxYSXyhLymGW4sCufcLG6VdiDdUGVkPhpqLxlvP5vl1983gQjJl3tqbrM731mjaZaP68AgosQ==}
   mdn-data@2.27.1:
     resolution: {integrity: sha512-9Yubnt3e8A0OKwxYSXyhLymGW4sCufcLG6VdiDdUGVkPhpqLxlvP5vl1983gQjJl3tqbrM731mjaZaP68AgosQ==}
 
@@ -1968,6 +1999,8 @@ packages:
 
   postcss@8.5.8:
     resolution: {integrity: sha512-OW/rX8O/jXnm82Ey1k44pObPtdblfiuWnrd8X7GJ7emImCOstunGbXUpp7HdBrFQX6rJzn3sPT397Wp5aCwCHg==}
+  postcss@8.5.8:
+    resolution: {integrity: sha512-OW/rX8O/jXnm82Ey1k44pObPtdblfiuWnrd8X7GJ7emImCOstunGbXUpp7HdBrFQX6rJzn3sPT397Wp5aCwCHg==}
     engines: {node: ^10 || ^12 || >=14}
 
   prismjs@1.30.0:
@@ -2007,6 +2040,8 @@ packages:
   regex@6.1.0:
     resolution: {integrity: sha512-6VwtthbV4o/7+OaAF9I5L5V3llLEsoPyq9P1JVXkedTP33c7MfCG0/5NOPcSJn0TzXcG9YUrR0gQSWioew3LDg==}
 
+  rehype-expressive-code@0.41.7:
+    resolution: {integrity: sha512-25f8ZMSF1d9CMscX7Cft0TSQIqdwjce2gDOvQ+d/w0FovsMwrSt3ODP4P3Z7wO1jsIJ4eYyaDRnIR/27bd/EMQ==}
   rehype-expressive-code@0.41.7:
     resolution: {integrity: sha512-25f8ZMSF1d9CMscX7Cft0TSQIqdwjce2gDOvQ+d/w0FovsMwrSt3ODP4P3Z7wO1jsIJ4eYyaDRnIR/27bd/EMQ==}
 
@@ -2102,6 +2137,8 @@ packages:
 
   shiki@3.23.0:
     resolution: {integrity: sha512-55Dj73uq9ZXL5zyeRPzHQsK7Nbyt6Y10k5s7OjuFZGMhpp4r/rsLBH0o/0fstIzX1Lep9VxefWljK/SKCzygIA==}
+  shiki@3.23.0:
+    resolution: {integrity: sha512-55Dj73uq9ZXL5zyeRPzHQsK7Nbyt6Y10k5s7OjuFZGMhpp4r/rsLBH0o/0fstIzX1Lep9VxefWljK/SKCzygIA==}
 
   shiki@4.0.2:
     resolution: {integrity: sha512-eAVKTMedR5ckPo4xne/PjYQYrU3qx78gtJZ+sHlXEg5IHhhoQhMfZVzetTYuaJS0L2Ef3AcCRzCHV8T0WI6nIQ==}
@@ -2181,6 +2218,8 @@ packages:
     resolution: {integrity: sha512-SS+jx45GF1QjgEXQx4NJZV9ImqmO2NPz5FNsIHrsDjh2YsHnawpan7SNQ1o8NuhrbHZy9AZhIoCUiCeaW/C80g==}
     engines: {node: '>=18'}
 
+  svgo@4.0.1:
+    resolution: {integrity: sha512-XDpWUOPC6FEibaLzjfe0ucaV0YrOjYotGJO1WpF0Zd+n6ZGEQUsSugaoLq9QkEZtAfQIxT42UChcssDVPP3+/w==}
   svgo@4.0.1:
     resolution: {integrity: sha512-XDpWUOPC6FEibaLzjfe0ucaV0YrOjYotGJO1WpF0Zd+n6ZGEQUsSugaoLq9QkEZtAfQIxT42UChcssDVPP3+/w==}
     engines: {node: '>=16'}
@@ -2405,7 +2444,10 @@ packages:
 
   vitefu@1.1.2:
     resolution: {integrity: sha512-zpKATdUbzbsycPFBN71nS2uzBUQiVnFoOrr2rvqv34S1lcAgMKKkjWleLGeiJlZ8lwCXvtWaRn7R3ZC16SYRuw==}
+  vitefu@1.1.2:
+    resolution: {integrity: sha512-zpKATdUbzbsycPFBN71nS2uzBUQiVnFoOrr2rvqv34S1lcAgMKKkjWleLGeiJlZ8lwCXvtWaRn7R3ZC16SYRuw==}
     peerDependencies:
+      vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-beta.0
       vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-beta.0
     peerDependenciesMeta:
       vite:
@@ -2476,8 +2518,10 @@ packages:
 snapshots:
 
   '@adobe/mdast-util-gridtables@4.0.17':
+  '@adobe/mdast-util-gridtables@4.0.17':
     dependencies:
       '@adobe/micromark-extension-gridtables': 2.0.4
+      mdast-util-from-markdown: 2.0.3
       mdast-util-from-markdown: 2.0.3
       mdast-util-to-hast: 13.2.1
       mdast-util-to-markdown: 2.1.2
@@ -2494,7 +2538,9 @@ snapshots:
       - supports-color
 
   '@adobe/remark-gridtables@3.0.18':
+  '@adobe/remark-gridtables@3.0.18':
     dependencies:
+      '@adobe/mdast-util-gridtables': 4.0.17
       '@adobe/mdast-util-gridtables': 4.0.17
       '@adobe/micromark-extension-gridtables': 2.0.4
     transitivePeerDependencies:
@@ -2656,6 +2702,7 @@ snapshots:
 
   '@capsizecss/unpack@4.0.0':
     dependencies:
+      fontkitten: 1.0.3
       fontkitten: 1.0.3
 
   '@clack/core@1.1.0':
@@ -2871,6 +2918,7 @@ snapshots:
     optional: true
 
   '@expressive-code/core@0.41.7':
+  '@expressive-code/core@0.41.7':
     dependencies:
       '@ctrl/tinycolor': 4.2.0
       hast-util-select: 6.0.4
@@ -2879,20 +2927,29 @@ snapshots:
       hastscript: 9.0.1
       postcss: 8.5.8
       postcss-nested: 6.2.0(postcss@8.5.8)
+      postcss: 8.5.8
+      postcss-nested: 6.2.0(postcss@8.5.8)
       unist-util-visit: 5.1.0
       unist-util-visit-parents: 6.0.2
 
   '@expressive-code/plugin-frames@0.41.7':
+  '@expressive-code/plugin-frames@0.41.7':
     dependencies:
       '@expressive-code/core': 0.41.7
+      '@expressive-code/core': 0.41.7
 
+  '@expressive-code/plugin-shiki@0.41.7':
   '@expressive-code/plugin-shiki@0.41.7':
     dependencies:
       '@expressive-code/core': 0.41.7
       shiki: 3.23.0
+      '@expressive-code/core': 0.41.7
+      shiki: 3.23.0
 
   '@expressive-code/plugin-text-markers@0.41.7':
+  '@expressive-code/plugin-text-markers@0.41.7':
     dependencies:
+      '@expressive-code/core': 0.41.7
       '@expressive-code/core': 0.41.7
 
   '@img/colour@1.1.0': {}
@@ -3022,6 +3079,7 @@ snapshots:
       '@types/hast': 3.0.4
       '@types/mdx': 2.0.13
       acorn: 8.16.0
+      acorn: 8.16.0
       collapse-white-space: 2.1.0
       devlop: 1.1.0
       estree-util-is-identifier-name: 3.0.0
@@ -3030,6 +3088,7 @@ snapshots:
       hast-util-to-jsx-runtime: 2.3.6
       markdown-extensions: 2.0.0
       recma-build-jsx: 1.0.0
+      recma-jsx: 1.0.1(acorn@8.16.0)
       recma-jsx: 1.0.1(acorn@8.16.0)
       recma-stringify: 1.0.0
       rehype-recma: 1.0.0
@@ -3163,7 +3222,9 @@ snapshots:
     optional: true
 
   '@shikijs/core@3.23.0':
+  '@shikijs/core@3.23.0':
     dependencies:
+      '@shikijs/types': 3.23.0
       '@shikijs/types': 3.23.0
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.4
@@ -3179,6 +3240,7 @@ snapshots:
 
   '@shikijs/engine-javascript@3.23.0':
     dependencies:
+      '@shikijs/types': 3.23.0
       '@shikijs/types': 3.23.0
       '@shikijs/vscode-textmate': 10.0.2
       oniguruma-to-es: 4.3.5
@@ -3555,7 +3617,9 @@ snapshots:
       source-map-js: 1.2.1
 
   css-tree@3.2.1:
+  css-tree@3.2.1:
     dependencies:
+      mdn-data: 2.27.1
       mdn-data: 2.27.1
       source-map-js: 1.2.1
 
@@ -3567,6 +3631,7 @@ snapshots:
     dependencies:
       css-tree: 2.2.1
 
+  daisyui@5.5.19: {}
   daisyui@5.5.19: {}
 
   debug@4.4.3:
@@ -3644,6 +3709,7 @@ snapshots:
   esast-util-from-js@2.0.1:
     dependencies:
       '@types/estree-jsx': 1.0.5
+      acorn: 8.16.0
       acorn: 8.16.0
       esast-util-from-estree: 2.0.0
       vfile-message: 4.0.3
@@ -3751,6 +3817,10 @@ snapshots:
       '@expressive-code/plugin-frames': 0.41.7
       '@expressive-code/plugin-shiki': 0.41.7
       '@expressive-code/plugin-text-markers': 0.41.7
+      '@expressive-code/core': 0.41.7
+      '@expressive-code/plugin-frames': 0.41.7
+      '@expressive-code/plugin-shiki': 0.41.7
+      '@expressive-code/plugin-text-markers': 0.41.7
 
   extend@3.0.2: {}
 
@@ -3767,7 +3837,9 @@ snapshots:
   fontace@0.4.1:
     dependencies:
       fontkitten: 1.0.3
+      fontkitten: 1.0.3
 
+  fontkitten@1.0.3:
   fontkitten@1.0.3:
     dependencies:
       tiny-inflate: 1.0.3
@@ -4111,6 +4183,7 @@ snapshots:
       ccount: 2.0.1
       devlop: 1.1.0
       mdast-util-from-markdown: 2.0.3
+      mdast-util-from-markdown: 2.0.3
       mdast-util-to-markdown: 2.1.2
       parse-entities: 4.0.2
       stringify-entities: 4.0.4
@@ -4123,6 +4196,7 @@ snapshots:
       '@types/hast': 3.0.4
       '@types/mdast': 4.0.4
       '@types/unist': 3.0.3
+      mdast-util-from-markdown: 2.0.3
       mdast-util-from-markdown: 2.0.3
       mdast-util-gfm-table: 2.0.0
       mdast-util-to-hast: 13.2.1
@@ -4143,6 +4217,7 @@ snapshots:
       unist-util-is: 6.0.1
       unist-util-visit-parents: 6.0.2
 
+  mdast-util-from-markdown@2.0.3:
   mdast-util-from-markdown@2.0.3:
     dependencies:
       '@types/mdast': 4.0.4
@@ -4166,6 +4241,7 @@ snapshots:
       devlop: 1.1.0
       escape-string-regexp: 5.0.0
       mdast-util-from-markdown: 2.0.3
+      mdast-util-from-markdown: 2.0.3
       mdast-util-to-markdown: 2.1.2
       micromark-extension-frontmatter: 2.0.0
     transitivePeerDependencies:
@@ -4184,6 +4260,7 @@ snapshots:
       '@types/mdast': 4.0.4
       devlop: 1.1.0
       mdast-util-from-markdown: 2.0.3
+      mdast-util-from-markdown: 2.0.3
       mdast-util-to-markdown: 2.1.2
       micromark-util-normalize-identifier: 2.0.1
     transitivePeerDependencies:
@@ -4192,6 +4269,7 @@ snapshots:
   mdast-util-gfm-strikethrough@2.0.0:
     dependencies:
       '@types/mdast': 4.0.4
+      mdast-util-from-markdown: 2.0.3
       mdast-util-from-markdown: 2.0.3
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
@@ -4203,6 +4281,7 @@ snapshots:
       devlop: 1.1.0
       markdown-table: 3.0.4
       mdast-util-from-markdown: 2.0.3
+      mdast-util-from-markdown: 2.0.3
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
@@ -4212,12 +4291,14 @@ snapshots:
       '@types/mdast': 4.0.4
       devlop: 1.1.0
       mdast-util-from-markdown: 2.0.3
+      mdast-util-from-markdown: 2.0.3
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
 
   mdast-util-gfm@3.1.0:
     dependencies:
+      mdast-util-from-markdown: 2.0.3
       mdast-util-from-markdown: 2.0.3
       mdast-util-gfm-autolink-literal: 2.0.1
       mdast-util-gfm-footnote: 2.1.0
@@ -4235,6 +4316,7 @@ snapshots:
       '@types/mdast': 4.0.4
       devlop: 1.1.0
       mdast-util-from-markdown: 2.0.3
+      mdast-util-from-markdown: 2.0.3
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
@@ -4248,6 +4330,7 @@ snapshots:
       ccount: 2.0.1
       devlop: 1.1.0
       mdast-util-from-markdown: 2.0.3
+      mdast-util-from-markdown: 2.0.3
       mdast-util-to-markdown: 2.1.2
       parse-entities: 4.0.2
       stringify-entities: 4.0.4
@@ -4258,6 +4341,7 @@ snapshots:
 
   mdast-util-mdx@3.0.0:
     dependencies:
+      mdast-util-from-markdown: 2.0.3
       mdast-util-from-markdown: 2.0.3
       mdast-util-mdx-expression: 2.0.1
       mdast-util-mdx-jsx: 3.2.0
@@ -4272,6 +4356,7 @@ snapshots:
       '@types/hast': 3.0.4
       '@types/mdast': 4.0.4
       devlop: 1.1.0
+      mdast-util-from-markdown: 2.0.3
       mdast-util-from-markdown: 2.0.3
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
@@ -4312,6 +4397,7 @@ snapshots:
 
   mdn-data@2.0.28: {}
 
+  mdn-data@2.27.1: {}
   mdn-data@2.27.1: {}
 
   micromark-core-commonmark@2.0.3:
@@ -4468,6 +4554,8 @@ snapshots:
 
   micromark-extension-mdxjs@3.0.0:
     dependencies:
+      acorn: 8.16.0
+      acorn-jsx: 5.3.2(acorn@8.16.0)
       acorn: 8.16.0
       acorn-jsx: 5.3.2(acorn@8.16.0)
       micromark-extension-mdx-expression: 3.0.1
@@ -4730,7 +4818,9 @@ snapshots:
   picomatch@4.0.3: {}
 
   postcss-nested@6.2.0(postcss@8.5.8):
+  postcss-nested@6.2.0(postcss@8.5.8):
     dependencies:
+      postcss: 8.5.8
       postcss: 8.5.8
       postcss-selector-parser: 6.1.2
 
@@ -4739,6 +4829,7 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
+  postcss@8.5.8:
   postcss@8.5.8:
     dependencies:
       nanoid: 3.3.11
@@ -4760,7 +4851,10 @@ snapshots:
       vfile: 6.0.3
 
   recma-jsx@1.0.1(acorn@8.16.0):
+  recma-jsx@1.0.1(acorn@8.16.0):
     dependencies:
+      acorn: 8.16.0
+      acorn-jsx: 5.3.2(acorn@8.16.0)
       acorn: 8.16.0
       acorn-jsx: 5.3.2(acorn@8.16.0)
       estree-util-to-js: 2.0.0
@@ -4793,7 +4887,9 @@ snapshots:
       regex-utilities: 2.3.0
 
   rehype-expressive-code@0.41.7:
+  rehype-expressive-code@0.41.7:
     dependencies:
+      expressive-code: 0.41.7
       expressive-code: 0.41.7
 
   rehype-format@5.0.1:
@@ -4904,6 +5000,7 @@ snapshots:
     dependencies:
       '@types/mdast': 4.0.4
       mdast-util-from-markdown: 2.0.3
+      mdast-util-from-markdown: 2.0.3
       micromark-util-types: 2.0.2
       unified: 11.0.5
     transitivePeerDependencies:
@@ -5002,6 +5099,7 @@ snapshots:
   sharp@0.34.5:
     dependencies:
       '@img/colour': 1.1.0
+      '@img/colour': 1.1.0
       detect-libc: 2.1.2
       semver: 7.7.4
     optionalDependencies:
@@ -5031,7 +5129,14 @@ snapshots:
       '@img/sharp-win32-x64': 0.34.5
 
   shiki@3.23.0:
+  shiki@3.23.0:
     dependencies:
+      '@shikijs/core': 3.23.0
+      '@shikijs/engine-javascript': 3.23.0
+      '@shikijs/engine-oniguruma': 3.23.0
+      '@shikijs/langs': 3.23.0
+      '@shikijs/themes': 3.23.0
+      '@shikijs/types': 3.23.0
       '@shikijs/core': 3.23.0
       '@shikijs/engine-javascript': 3.23.0
       '@shikijs/engine-oniguruma': 3.23.0
@@ -5133,9 +5238,11 @@ snapshots:
   supports-color@10.2.2: {}
 
   svgo@4.0.1:
+  svgo@4.0.1:
     dependencies:
       commander: 11.1.0
       css-select: 5.2.2
+      css-tree: 3.2.1
       css-tree: 3.2.1
       css-what: 6.2.2
       csso: 5.0.5
@@ -5194,6 +5301,7 @@ snapshots:
 
   unifont@0.7.4:
     dependencies:
+      css-tree: 3.2.1
       css-tree: 3.2.1
       ofetch: 1.5.1
       ohash: 2.0.11
