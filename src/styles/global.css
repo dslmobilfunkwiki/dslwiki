@@ -48,9 +48,3 @@ table {
 	min-width: 0;
 	flex-shrink: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-	@view-transition {
-		navigation: auto;
-	}
-}
