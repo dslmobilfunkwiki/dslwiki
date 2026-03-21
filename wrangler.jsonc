@@ -1,17 +1,20 @@
 {
-    "name": "dslwiki",
-    // Update to today's date
-    "compatibility_date": "2025-03-25",
-    "assets": {
-      "directory": "./dist"
-    },
-    "routes": [
+  "name": "dslwiki",
+  "main": "@astrojs/cloudflare/entrypoints/server",
+  "compatibility_date": "2025-03-25",
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [
     {
       "pattern": "dsl.wiki",
       "custom_domain": true
     }
   ],
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
   "placement": {
     "mode": "smart"
   }
-  }
+}
