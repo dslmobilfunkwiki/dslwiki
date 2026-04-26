@@ -25,11 +25,16 @@ export default defineConfig({
 			editLink: {
 				baseUrl: "https://github.com/dslmobilfunkwiki/dslwiki/edit/main/",
 			},
+			lastUpdated: true,
+			head: [
+				{
+					tag: 'style',
+					content: `.sidebar-content ul li:has(a[href="/disclaimer/"]), .sidebar-content ul li:has(a[href="/impressum/"]) { display: none !important; }`,
+				},
+			],
 			components: {
-				// Override the default `Sidebar` component with a custom one.
 				Sidebar: "./src/components/Sidebar.astro",
 			},
-			lastUpdated: true,
 			plugins: [
 				//viewTransitions(),
 				starlightSidebarTopics([
@@ -40,6 +45,8 @@ export default defineConfig({
 						id: "learn",
 						items: [
 							{ label: "Allgemein", autogenerate: { directory: "allgemein" } },
+							{ label: "Disclaimer", link: "/disclaimer/" },
+							{ label: "Impressum", link: "/impressum/" },
 						],
 					},
 					{
@@ -78,6 +85,9 @@ export default defineConfig({
 				},
 			],
 			customCss: ['./src/styles/global.css'],
+			components: {
+				Sidebar: "./src/components/Sidebar.astro",
+			},
 		}),
 	],
 	markdown: {
@@ -94,6 +104,11 @@ export default defineConfig({
 	},
 	vite: {
 		plugins: [tailwindcss()],
+		resolve: {
+			alias: {
+				'starlight-sidebar-topics/overrides/Sidebar.astro': 'C:/Users/bitti/Documents/GitHub/dslwiki/src/components/Sidebar.astro',
+			},
+		},
 		ssr: {
 			noExternal: ['starlight-sidebar-topics'],
 			optimizeDeps: {

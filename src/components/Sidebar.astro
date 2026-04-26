@@ -3,7 +3,50 @@ import Default from "@astrojs/starlight/components/Sidebar.astro";
 import TopicsDropdown from "starlight-sidebar-topics-dropdown/TopicsDropdown.astro";
 ---
 
-{/* Render the topics dropdown menu. */}
 <TopicsDropdown />
-{/* Render the default sidebar. */}
 <Default><slot /></Default>
+
+<div class="sidebar-footer">
+	<nav class="sidebar-legal-nav">
+		<a href="/disclaimer/" class="sidebar-link">Disclaimer</a>
+		<span class="sidebar-separator"></span>
+		<a href="/impressum/" class="sidebar-link">Impressum</a>
+	</nav>
+</div>
+
+<style>
+	.sidebar-footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: var(--sl-sidebar-width);
+		padding: 1rem;
+		border-top: 1px solid var(--sl-color-hairline);
+		background-color: var(--sl-color-bg-sidebar);
+		z-index: 100;
+	}
+	.sidebar-legal-nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+	.sidebar-link {
+		color: rgba(255,255,255,0.6) !important;
+		text-decoration: none !important;
+		font-size: 11px;
+		font-weight: 600;
+		font-family: var(--sl-font-system);
+		transition: color 0.2s ease;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+	}
+	.sidebar-link:hover {
+		color: #fff !important;
+	}
+	.sidebar-separator {
+		width: 1px;
+		height: 10px;
+		background-color: rgba(255,255,255,0.2);
+	}
+</style>

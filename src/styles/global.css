@@ -23,6 +23,12 @@
 /* Custom styles for the application */
 /* full-width table */
 /* This will make the table take the full width of its container */
+/* Hide Legal links from sidebar topic menu items only (not the footer) */
+.sidebar-content ul li:has(a[href="/disclaimer/"]),
+.sidebar-content ul li:has(a[href="/impressum/"]) {
+	display: none !important;
+}
+
 table {
 	inline-size: 100%;
 	display: table !important;
@@ -34,7 +40,6 @@ table {
 	--sl-content-margin-inline: 0 0 !important;
 	/* Reset margins */
 	--sl-content-width: 100%;
-
 }
 
 /* Prevent right sidebar from squashing main content */
