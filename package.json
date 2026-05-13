@@ -15,7 +15,7 @@
     "@astrojs/starlight": "^0.38.4",
     "@astrojs/starlight-tailwind": "^5.0.0",
     "@tailwindcss/vite": "^4.2.4",
-    "astro": "^6.1.9",
+    "astro": "^6.1.10",
     "daisyui": "^5.5.19",
     "remark-emoji": "^5.0.2",
     "remark-extended-table": "^2.0.3",
